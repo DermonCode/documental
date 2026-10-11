@@ -1,0 +1,65 @@
+FUENTES DEL DOCUMENTAL "WHO GETS TO KEEP VIDEO GAMES"
+(clave = nombre del archivo en proyecto/clips/)
+
+== YouTube ==
+carts      Retro Game Camp | Akihabara Tokyo (Retro Store B-Roll)      https://www.youtube.com/watch?v=_z6qRNnaHWE
+ps5        PS5 B-roll                                                  https://www.youtube.com/watch?v=S6KxT-uexyg
+skg        Stop Killing Games: Gamers take on the industry...          https://www.youtube.com/watch?v=sZYruMkZazQ
+cifaldi    Meet the Man Trying to Save Vintage Video Games             https://www.youtube.com/watch?v=ChqUlJdFYS8
+euparl     A serious discussion: Stop Killing Games reaches European Parliament   https://www.youtube.com/watch?v=c5ZQbmFgA0Q
+vita       Exploring the PlayStation Vita Store in 2026 before it shuts down      https://www.youtube.com/watch?v=wKk3cIVZVNE
+sm64pc     Super Mario 64 vs Render96 Ray Tracing (PC Port)            https://www.youtube.com/watch?v=8gDKhNN2slE
+re3        GTA 3 original vs reversed engineered                       https://www.youtube.com/watch?v=WXq46Sof2CA
+zelda      Majoras Mask PC Port [Zelda 64: Recompiled]                 https://www.youtube.com/watch?v=xk0nMG6nND0
+sonic      Sonic Unleashed Recompiled: Apotos Day (Windmill Isle) 4K 60fps   (ID incompleto: empieza con nEW-SFOje; buscar por el título)
+decomp     AI Game Decompilation: A Deep Dive                          https://www.youtube.com/watch?v=Pl7ThC4PiVA
+aislop     AI GAMES are Infecting Every Platform                       https://www.youtube.com/watch?v=9tgVqe0c8ps
+skycraft   What Can You ACTUALLY DO In SkyCraft?                       https://www.youtube.com/watch?v=PvP5KPtSKqQ
+fallout    Minecraft in Fallout 4 = Falloutcraft Mod                   https://www.youtube.com/watch?v=6QzpzfGrk-A
+clairgoty  Clair Obscur: Expedition 33 - "Une vie à t'aimer" (The Game Awards)   https://www.youtube.com/watch?v=nL7I5tCwhhs
+
+Bajados pero NO usados en los videos:
+shelf      How to Build EASY Shelves for Video Games...                https://www.youtube.com/watch?v=H9k72wny67Y
+owcraft    How to Make a Passthrough Mod With AI, Step by Step         https://www.youtube.com/watch?v=MG1PxonJ158
+
+== Trailers oficiales de Steam (primer trailer de cada página) ==
+clair      Clair Obscur: Expedition 33 - Launch Trailer               https://store.steampowered.com/app/1903340
+silksong   Hollow Knight: Silksong - Release Trailer                  https://store.steampowered.com/app/1030300
+schedule   Schedule I - Gameplay Trailer                              https://store.steampowered.com/app/3164500
+repo       R.E.P.O. - Cosmetic Update Trailer                         https://store.steampowered.com/app/3241660
+spidey     Marvel's Spider-Man 2 - Launch Trailer                     https://store.steampowered.com/app/2651280
+tlou       The Last of Us Part II Remastered - Launch Trailer         https://store.steampowered.com/app/2531310
+gow        God of War Ragnarök - Launch Trailer                       https://store.steampowered.com/app/2322010
+horizon    Horizon Forbidden West - Launch Trailer                    https://store.steampowered.com/app/2420110
+acmap      Assassin's Creed Shadows - Gameplay Trailer                https://store.steampowered.com/app/3159330
+skyrim     Skyrim Special Edition - Trailer                           https://store.steampowered.com/app/489830
+fallout4   Fallout 4 - Creations Bundle Trailer                       https://store.steampowered.com/app/377160
+outerwilds Outer Wilds - Accolades Trailer                            https://store.steampowered.com/app/753640
+
+== Internet Archive ==
+sm64n64    https://archive.org/details/Mario64_TimedMiniGames
+melee      https://archive.org/details/SSBM_100mm_Dec04
+sbk2       https://archive.org/details/youtube-lakfrnWxqD0
+dk64       https://archive.org/details/DonkeyKong64_SS_426
+majora     https://archive.org/details/ZeldaMajorasMask_337
+gta3       https://archive.org/details/GrandTheftAuto3_14340
+pscm       https://archive.org/details/Sony_-_Playstation_commercial_1996
+pizzadisc  https://archive.org/details/pizzahutps1demodiscscommercial
+n64cm      https://archive.org/details/Nintendo_-_Super_Mario_64_commercial_USA_1996
+n64games   https://archive.org/details/youtube-RZBPwBeYc5g   (bajado, no usado)
+
+== Capturas y grabación de pantalla (hechas con Playwright) ==
+shot_psblog    https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
+shot_re3       https://github.com/GTAmodding/re3
+shot_skycraft  https://github.com/chasmlol/SkyCraft
+steam (clip)   https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998
+
+== Música (Kevin MacLeod, incompetech.com, CC BY 4.0) ==
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Lightless%20Dawn.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Interloper.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Investigations.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ice%20Flow.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Pixelland.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heroic%20Age.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Wholesome.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Inspired.mp3
