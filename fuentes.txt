@@ -1,65 +1,86 @@
-FUENTES DEL DOCUMENTAL "WHO GETS TO KEEP VIDEO GAMES"
-(clave = nombre del archivo en proyecto/clips/)
+FUENTES DEL DOCUMENTAL "WHO GETS TO KEEP VIDEO GAMES" (v3)
+(clave = nombre del archivo en proyecto/clips/, con el tramo usado; todo descargado a 1080p o más y llevado a 1920x1080)
 
 == YouTube ==
-carts      Retro Game Camp | Akihabara Tokyo (Retro Store B-Roll)      https://www.youtube.com/watch?v=_z6qRNnaHWE
-ps5        PS5 B-roll                                                  https://www.youtube.com/watch?v=S6KxT-uexyg
-skg        Stop Killing Games: Gamers take on the industry...          https://www.youtube.com/watch?v=sZYruMkZazQ
-cifaldi    Meet the Man Trying to Save Vintage Video Games             https://www.youtube.com/watch?v=ChqUlJdFYS8
-euparl     A serious discussion: Stop Killing Games reaches European Parliament   https://www.youtube.com/watch?v=c5ZQbmFgA0Q
-vita       Exploring the PlayStation Vita Store in 2026 before it shuts down      https://www.youtube.com/watch?v=wKk3cIVZVNE
-sm64pc     Super Mario 64 vs Render96 Ray Tracing (PC Port)            https://www.youtube.com/watch?v=8gDKhNN2slE
-re3        GTA 3 original vs reversed engineered                       https://www.youtube.com/watch?v=WXq46Sof2CA
-zelda      Majoras Mask PC Port [Zelda 64: Recompiled]                 https://www.youtube.com/watch?v=xk0nMG6nND0
-sonic      Sonic Unleashed Recompiled: Apotos Day (Windmill Isle) 4K 60fps   (ID incompleto: empieza con nEW-SFOje; buscar por el título)
-decomp     AI Game Decompilation: A Deep Dive                          https://www.youtube.com/watch?v=Pl7ThC4PiVA
-aislop     AI GAMES are Infecting Every Platform                       https://www.youtube.com/watch?v=9tgVqe0c8ps
-skycraft   What Can You ACTUALLY DO In SkyCraft?                       https://www.youtube.com/watch?v=PvP5KPtSKqQ
-fallout    Minecraft in Fallout 4 = Falloutcraft Mod                   https://www.youtube.com/watch?v=6QzpzfGrk-A
-clairgoty  Clair Obscur: Expedition 33 - "Une vie à t'aimer" (The Game Awards)   https://www.youtube.com/watch?v=nL7I5tCwhhs
+ps5cine    2:49.0-3:41.0  https://www.youtube.com/watch?v=xm3VHjZl4DU
+mpbox      0:00.0-0:40.0  https://www.youtube.com/watch?v=pEqgewp9DTc
+mpdisc     4:49.0-5:30.0  https://www.youtube.com/watch?v=pEqgewp9DTc
+shelf      3:20.0-4:40.0  https://www.youtube.com/watch?v=4iSpL_-hO8Y
+boxes      7:30.0-8:30.0  https://www.youtube.com/watch?v=4iSpL_-hO8Y
+cifaldi1   1:20.0-1:38.0  https://www.youtube.com/watch?v=ChqUlJdFYS8
+cifaldi2   4:38.0-4:55.0  https://www.youtube.com/watch?v=ChqUlJdFYS8
+thecrew    1:16.0-1:58.0  https://www.youtube.com/watch?v=sZYruMkZazQ
+aislop1    6:20.0-7:40.0  https://www.youtube.com/watch?v=9tgVqe0c8ps
+aislop2    10:40.0-13:20.0  https://www.youtube.com/watch?v=9tgVqe0c8ps
+unitymap   1:36.0-1:58.0  https://www.youtube.com/watch?v=kt0M-FZV3RM
+tga        3:16.0-3:24.0  https://www.youtube.com/watch?v=JvW-rDG5Jwc
+gotywin    0:11.0-0:46.0  https://www.youtube.com/watch?v=WDraAxp-Wp8
+gotystage  1:09.0-1:40.0  https://www.youtube.com/watch?v=WDraAxp-Wp8
+sm64       5:18.0-5:47.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+sm64rt     6:16.0-6:56.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+soh        3:48.0-5:40.0  https://www.youtube.com/watch?v=AW_5Q_RyDhY
+mm2s       2:39.0-3:12.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+pd         1:11.0-1:30.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+sf64       0:49.0-1:04.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+mk64       1:39.0-2:04.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+jak        2:01.0-3:40.0  https://www.youtube.com/watch?v=IS4-l8RxCfo
+re3        0:09.0-1:05.0  https://www.youtube.com/watch?v=ZJ9Ee9XgK3k
+melee      0:36.0-2:50.0  https://www.youtube.com/watch?v=qfEWsZIhF9s
+sbk2       4:42.0-6:16.0  https://www.youtube.com/watch?v=ryzRqtZgjxA
+mmrecomp   16:08.0-20:40.0  https://www.youtube.com/watch?v=xGZ5aHmUWic
+duke       0:05.0-0:22.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+drmario    3:17.0-3:31.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+banjo      7:08.0-7:37.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+dino       4:49.0-5:18.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+sonic      0:11.0-2:25.0  https://www.youtube.com/watch?v=nEW-SFOjeCM
+skyhud     16:52.0-17:20.0  https://www.youtube.com/watch?v=PvP5KPtSKqQ
+skyplace   4:00.0-4:45.0  https://www.youtube.com/watch?v=PvP5KPtSKqQ
+skyplace2  3:56.0-4:10.0  https://www.youtube.com/watch?v=zRT3MyFwgu0
+skydig     5:02.0-5:25.0  https://www.youtube.com/watch?v=ZehgImMhnRY
+skydig2    10:25.0-10:55.0  https://www.youtube.com/watch?v=ZehgImMhnRY
+skyfight   4:46.0-4:58.0  https://www.youtube.com/watch?v=ZehgImMhnRY
+skyfight2  6:34.0-6:47.0  https://www.youtube.com/watch?v=zRT3MyFwgu0
+guidehow   0:36.0-0:48.0  https://www.youtube.com/watch?v=MG1PxonJ158
+guideask   2:39.0-2:50.0  https://www.youtube.com/watch?v=MG1PxonJ158
+guidelog   3:41.0-4:16.0  https://www.youtube.com/watch?v=MG1PxonJ158
+fallout    1:44.0-1:58.0  https://www.youtube.com/watch?v=6QzpzfGrk-A
+fallout2   0:45.0-0:58.0  https://www.youtube.com/watch?v=6QzpzfGrk-A
+wow        0:27.0-0:45.0  https://www.youtube.com/watch?v=sX3lsLiPS2s
+wow2       1:03.0-1:21.0  https://www.youtube.com/watch?v=sX3lsLiPS2s
+skate      0:04.0-0:31.0  https://www.youtube.com/watch?v=EaOnLVPKiPc
+doom       0:16.0-0:49.0  https://www.youtube.com/watch?v=hYSPaI5h4vQ
 
-Bajados pero NO usados en los videos:
-shelf      How to Build EASY Shelves for Video Games...                https://www.youtube.com/watch?v=H9k72wny67Y
-owcraft    How to Make a Passthrough Mod With AI, Step by Step         https://www.youtube.com/watch?v=MG1PxonJ158
+== Trailers oficiales de Steam (1080p) ==
+spidey1    0:30.0-0:40.0  Marvel's Spider-Man 2 - Launch Trailer (app/2651280)
+spidey2    0:46.5-0:56.0  Marvel's Spider-Man 2 - Launch Trailer (app/2651280)
+shoulder1  0:42.0-0:47.5  Assassin's Creed Shadows - Gameplay Trailer (app/3159330)
+shoulder2  0:31.0-0:36.0  Horizon Forbidden West - Launch Trailer (app/2420110)
+walk       1:02.0-1:08.5  Assassin's Creed Shadows - Gameplay Trailer (app/3159330)
+clair      0:44.0-1:12.0  Clair Obscur: Expedition 33 - Launch Trailer (store.steampowered.com/app/1903340)
+claircine  0:05.0-0:16.0  Clair Obscur: Expedition 33 - Launch Trailer (store.steampowered.com/app/1903340)
+silksong   0:28.0-1:04.0  Hollow Knight: Silksong - Release Trailer (app/1030300)
+schedule   0:07.8-0:52.0  Schedule I - Gameplay Trailer (app/3164500)
+repo       0:52.0-1:10.0  R.E.P.O. - Cosmetic Update Trailer (app/3241660)
 
-== Trailers oficiales de Steam (primer trailer de cada página) ==
-clair      Clair Obscur: Expedition 33 - Launch Trailer               https://store.steampowered.com/app/1903340
-silksong   Hollow Knight: Silksong - Release Trailer                  https://store.steampowered.com/app/1030300
-schedule   Schedule I - Gameplay Trailer                              https://store.steampowered.com/app/3164500
-repo       R.E.P.O. - Cosmetic Update Trailer                         https://store.steampowered.com/app/3241660
-spidey     Marvel's Spider-Man 2 - Launch Trailer                     https://store.steampowered.com/app/2651280
-tlou       The Last of Us Part II Remastered - Launch Trailer         https://store.steampowered.com/app/2531310
-gow        God of War Ragnarök - Launch Trailer                       https://store.steampowered.com/app/2322010
-horizon    Horizon Forbidden West - Launch Trailer                    https://store.steampowered.com/app/2420110
-acmap      Assassin's Creed Shadows - Gameplay Trailer                https://store.steampowered.com/app/3159330
-skyrim     Skyrim Special Edition - Trailer                           https://store.steampowered.com/app/489830
-fallout4   Fallout 4 - Creations Bundle Trailer                       https://store.steampowered.com/app/377160
-outerwilds Outer Wilds - Accolades Trailer                            https://store.steampowered.com/app/753640
-
-== Internet Archive ==
-sm64n64    https://archive.org/details/Mario64_TimedMiniGames
-melee      https://archive.org/details/SSBM_100mm_Dec04
-sbk2       https://archive.org/details/youtube-lakfrnWxqD0
-dk64       https://archive.org/details/DonkeyKong64_SS_426
-majora     https://archive.org/details/ZeldaMajorasMask_337
-gta3       https://archive.org/details/GrandTheftAuto3_14340
-pscm       https://archive.org/details/Sony_-_Playstation_commercial_1996
-pizzadisc  https://archive.org/details/pizzahutps1demodiscscommercial
-n64cm      https://archive.org/details/Nintendo_-_Super_Mario_64_commercial_USA_1996
-n64games   https://archive.org/details/youtube-RZBPwBeYc5g   (bajado, no usado)
-
-== Capturas y grabación de pantalla (hechas con Playwright) ==
+== Capturas y grabación de pantalla (Playwright) ==
 shot_psblog    https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
 shot_re3       https://github.com/GTAmodding/re3
 shot_skycraft  https://github.com/chasmlol/SkyCraft
-steam (clip)   https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998
+shot_sm64code  https://github.com/n64decomp/sm64/blob/master/src/game/mario.c
+steam (clip)   https://store.steampowered.com/search/?sort_by=Released_DESC&category1=998 (grabado a 1920x1080)
+
+== Datos nuevos del guion v3 ==
+Ports por decompilación y recompilaciones mostradas: ver clips sm64, sm64rt, soh, mm2s, pd, sf64, mk64, jak, duke, drmario, banjo, dino (video zA0v6lGYUEI, con el nombre de cada proyecto en pantalla), mmrecomp, sonic.
+SkyCraft cava el terreno: https://www.youtube.com/watch?v=ZehgImMhnRY
+FalloutCraft: https://www.youtube.com/watch?v=6QzpzfGrk-A · Minecraft en WoW: https://www.youtube.com/watch?v=sX3lsLiPS2s
+GTA San AnSkateas: https://github.com/ryglizzy/GTA-San-AnSkateas · SkyDoom: https://www.youtube.com/watch?v=hYSPaI5h4vQ
 
 == Música (Kevin MacLeod, incompetech.com, CC BY 4.0) ==
 https://incompetech.com/music/royalty-free/mp3-royaltyfree/Lightless%20Dawn.mp3
 https://incompetech.com/music/royalty-free/mp3-royaltyfree/Interloper.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Investigations.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ice%20Flow.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Pixelland.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heroic%20Age.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Wholesome.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sneaky%20Snitch.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Life%20of%20Riley.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Crypto.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Digital%20Lemonade.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hyperfun.mp3
 https://incompetech.com/music/royalty-free/mp3-royaltyfree/Inspired.mp3

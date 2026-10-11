@@ -5,10 +5,12 @@ from concurrent.futures import ThreadPoolExecutor
 from plan import ANCHORS, MUSIC
 
 V = int(sys.argv[1])          # 1 = clips only, 2 = clips + graphics
-W, H, FPS, SR = 1280, 720, 30, 48000
+W, H, FPS, SR = 1920, 1080, 30, 48000
+K = W / 1280                  # graphics were laid out at 1280x720; everything is drawn natively at K x
 TL = json.load(open('timeline.json')); IT = TL['items']; TOTAL = TL['total'] + 0.5
 F = '/usr/share/fonts/opentype/inter/'
-def font(n, s): return ImageFont.truetype(F + n if n.endswith('otf') else n, s)
+def font(n, s): return ImageFont.truetype(F + n if n.endswith('otf') else n, round(s * K))
+def k(*v): return [x * K for x in v] if len(v) > 1 else v[0] * K
 MONO = '/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf'
 
 def find(sub):
@@ -33,10 +35,10 @@ def wrap(d, txt, f, maxw):
 def g_big(t, dur, txt, sub='', col=WHITE, size=150):
     im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); a = int(255 * ease(t / .35))
     f = font('InterDisplay-Black.otf', size)
-    while d.textlength(txt, font=f) > W - 120: size -= 8; f = font('InterDisplay-Black.otf', size)
-    ctext(d, H / 2 - size * .75 - 10 * (1 - ease(t / .35)), txt, f, col, a)
-    for k, l in enumerate(wrap(d, sub, font('Inter-Medium.otf', 38), 1000)):
-        ctext(d, H / 2 + size * .45 + k * 48, l, font('Inter-Medium.otf', 38), GREY, a)
+    while d.textlength(txt, font=f) > W - k(120): size -= 8; f = font('InterDisplay-Black.otf', size)
+    ctext(d, H / 2 - k(size * .75 + 10 * (1 - ease(t / .35))), txt, f, col, a)
+    for n, l in enumerate(wrap(d, sub, font('Inter-Medium.otf', 38), k(1000))):
+        ctext(d, H / 2 + k(size * .45 + n * 48), l, font('Inter-Medium.otf', 38), GREY, a)
     return im
 
 def g_counter(t, dur, a0, a1, fmt, sub='', col=WHITE):
@@ -46,106 +48,95 @@ def g_counter(t, dur, a0, a1, fmt, sub='', col=WHITE):
 def g_quote(t, dur, txt, who):
     im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); a = int(255 * ease(t / .4))
     f = font('Inter-Italic.otf', 46 if len(txt) < 140 else 38)
-    ls = wrap(d, '“' + txt + '”', f, 980); lh = f.size * 1.35
-    y0 = H / 2 - (len(ls) * lh + 60) / 2
-    d.rectangle([130, y0, 138, y0 + len(ls) * lh], fill=GOLD + (a,))
-    for k, l in enumerate(ls): d.text((170, y0 + k * lh), l, font=f, fill=WHITE + (a,))
-    d.text((170, y0 + len(ls) * lh + 24), '— ' + who, font=font('Inter-Medium.otf', 32), fill=GREY + (a,))
+    ls = wrap(d, '“' + txt + '”', f, k(980)); lh = f.size * 1.35
+    y0 = H / 2 - (len(ls) * lh + k(60)) / 2
+    d.rectangle([k(130), y0, k(138), y0 + len(ls) * lh], fill=GOLD + (a,))
+    for n, l in enumerate(ls): d.text((k(170), y0 + n * lh), l, font=f, fill=WHITE + (a,))
+    d.text((k(170), y0 + len(ls) * lh + k(24)), '— ' + who, font=font('Inter-Medium.otf', 32), fill=GREY + (a,))
     return im
 
 def g_bars(t, dur, rows, unit, title, anim='last'):
     im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im)
     mx = max(r[1] for r in rows); fl = font('Inter-Medium.otf', 34); fv = font('InterDisplay-Bold.otf', 44)
-    ctext(d, 110, title, font('Inter-Bold.otf', 40), GREY)
-    y0 = H / 2 - len(rows) * 60 + 40
-    for k, (lab, val) in enumerate(rows):
-        p = ease(t / 1.0) if (anim == 'all' or k == len(rows) - 1) else 1
-        y = y0 + k * 120; bw = 600 * val / mx * p
-        d.text((120, y + 8), lab, font=fl, fill=WHITE + (255,))
-        d.rectangle([400, y, 400 + bw, y + 64], fill=(RED if k == len(rows) - 1 and anim == 'last' else GOLD) + (255,))
+    ctext(d, k(110), title, font('Inter-Bold.otf', 40), GREY)
+    y0 = H / 2 - k(len(rows) * 60 - 40)
+    for n, (lab, val) in enumerate(rows):
+        p = ease(t / 1.0) if (anim == 'all' or n == len(rows) - 1) else 1
+        y = y0 + k(n * 120); bw = k(600) * val / mx * p
+        d.text((k(120), y + k(8)), lab, font=fl, fill=WHITE + (255,))
+        d.rectangle([k(400), y, k(400) + bw, y + k(64)], fill=(RED if n == len(rows) - 1 and anim == 'last' else GOLD) + (255,))
         lab2 = (f'{val * p:.1f}'.removesuffix('.0') + '%') if '%' in unit else unit.format(val * p)
-        d.text((415 + bw, y + 6), lab2, font=fv, fill=WHITE + (255,))
+        d.text((k(415) + bw, y + k(6)), lab2, font=fv, fill=WHITE + (255,))
     return im
 
 def g_progress(t, dur, title, sub):
     im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); p = ease(t / (dur * .75))
-    ctext(d, 200, title, font('Inter-Bold.otf', 52), WHITE)
-    d.rectangle([190, 330, 1090, 400], outline=GREY + (255,), width=4)
-    d.rectangle([198, 338, 198 + 884 * p, 392], fill=(GOLD if p < 1 else (90, 220, 120)) + (255,))
-    ctext(d, 440, f'{100 * p:.1f}%', font('InterDisplay-Black.otf', 110), WHITE)
-    ctext(d, 590, sub, font('Inter-Medium.otf', 34), GREY)
+    ctext(d, k(200), title, font('Inter-Bold.otf', 52), WHITE)
+    d.rectangle(k(190, 330, 1090, 400), outline=GREY + (255,), width=round(k(4)))
+    d.rectangle([k(198), k(338), k(198 + 884 * p), k(392)], fill=(GOLD if p < 1 else (90, 220, 120)) + (255,))
+    ctext(d, k(440), f'{100 * p:.1f}%', font('InterDisplay-Black.otf', 110), WHITE)
+    ctext(d, k(590), sub, font('Inter-Medium.otf', 34), GREY)
     return im
 
 FUNCS = [f'func_8{0x2A100 + k * 0x1F4:06X}' for k in range(40)]
 def g_terminal(t, dur, lines=None):
-    im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); f = font(MONO, 30)
-    d.rounded_rectangle([100, 70, 1180, 650], 18, fill=(12, 14, 18, 235))
+    im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); f = font(MONO, 30 if not lines or max(map(len, lines)) < 50 else 25)
+    d.rounded_rectangle(k(100, 70, 1180, 650), k(18), fill=(12, 14, 18, 235))
     rows = lines or [f'{fn}.c {"." * 18} MATCH ✓' for fn in FUNCS]
     n = int(t * (3.2 if not lines else len(rows) / max(1, dur * .8))) + 1
-    for k, r in enumerate(rows[max(0, n - 15):n]):
-        col = (90, 230, 120) if 'MATCH' in r else ((255, 200, 60) if r.startswith('>') else (220, 220, 220))
-        d.text((140, 100 + k * 36), r, font=f, fill=col + (255,))
+    for m, r in enumerate(rows[max(0, n - 15):n]):
+        col = (90, 230, 120) if 'MATCH' in r or 'OK' in r else ((255, 200, 60) if r.startswith('>') else (220, 220, 220))
+        d.text((k(140), k(100 + m * 36)), r, font=f, fill=col + (255,))
     return im
 
 def g_list(t, dur, items, times):
     im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); f = font('Inter-Bold.otf', 58)
-    y0 = H / 2 - len(items) * 55
-    for k, (it, tt) in enumerate(zip(items, times)):
+    y0 = H / 2 - k(len(items) * 55)
+    for n, (it, tt) in enumerate(zip(items, times)):
         a = int(255 * ease((t - tt) / .3))
-        if a > 0: d.text((200, y0 + k * 110), it, font=f, fill=(RED if it.startswith('×') else WHITE) + (a,))
+        if a > 0: d.text((k(200), y0 + k(n * 110)), it, font=f, fill=(RED if it.startswith('×') else WHITE) + (a,))
     return im
 
 def g_title(t, dur):
     im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); a = int(255 * min(ease(t / 1.5), ease((dur - t) / 1.2)))
-    ctext(d, 300, 'WHO GETS TO KEEP', font('InterDisplay-Black.otf', 92), WHITE, a)
-    ctext(d, 400, 'VIDEO GAMES', font('InterDisplay-Black.otf', 92), GOLD, a)
+    ctext(d, k(300), 'WHO GETS TO KEEP', font('InterDisplay-Black.otf', 92), WHITE, a)
+    ctext(d, k(400), 'VIDEO GAMES', font('InterDisplay-Black.otf', 92), GOLD, a)
     return im
 
 CREDITS = ['Music by Kevin MacLeod (incompetech.com)', 'Licensed under Creative Commons: By Attribution 4.0',
-           'Lightless Dawn · Interloper · Investigations · Ice Flow', 'Pixelland · Heroic Age · Wholesome · Inspired',
+           'Lightless Dawn · Interloper · Sneaky Snitch · Life of Riley', 'Crypto · Digital Lemonade · Hyperfun · Inspired',
            '', 'Game footage and trailers © their respective owners', 'Narration: synthetic voice']
 def g_credits(t, dur):
     im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); a = int(255 * ease(t / 1.0))
-    for k, l in enumerate(CREDITS): ctext(d, 190 + k * 52, l, font('Inter-Medium.otf', 34), WHITE if k < 2 else GREY, a)
+    for n, l in enumerate(CREDITS): ctext(d, k(190 + n * 52), l, font('Inter-Medium.otf', 34), WHITE if n < 2 else GREY, a)
     return im
 
 # line substring -> (kind, args, span_lines)
 G = {
- "Physical software had made up": ('big', ('3%', 'of PlayStation software sales were physical'), 1),
+ "Sony announced that new PlayStation": ('shot', ('gfx/shot_psblog.png', .33, .80, 1.0, 1.55), 1),
  "Three years earlier": ('big', ('4,000+', 'classic games studied by the Video Game History Foundation', GOLD), 1),
  "Thirteen percent.": ('counter', (0, 13, '{:.0f}%', 'still available through official means'), 1),
- "The other 87%": ('big', ('87%', 'out of print', RED), 1),
- "one petition to reverse": ('counter', (0, 200000, '{:,.0f}', 'signatures on one Change.org petition'), 1),
- "Analyst Daniel Ahmad": ('quote', ('The transition was inevitable. The backlash will be forgotten in two years.', 'Daniel Ahmad, analyst (paraphrased)'), 1),
- "replied to a post claiming": ('quote', ('Piracy is the only extant form of media preservation that exists in games right now.', 'the post Cifaldi replied to'), 1),
- "As the director of a historical": ('quote', ('As the director of a historical video game preservation institution, and someone who has dedicated his entire adult life to this cause, this is accurate.', 'Frank Cifaldi, Video Game History Foundation'), 1),
- "He added, ": ('quote', ('We have attempted to work with the industry’s trade organization to find a legal path forward, but they refuse to offer a meaningful alternative.', 'Frank Cifaldi'), 1),
- "Stop Killing Games movement collected": ('counter', (0, 1294188, '{:,.0f}', "verified signatures · European Citizens' Initiative"), 1),
- "A legal obligation to keep": ('quote', ('…would not be proportionate at this stage.', 'European Commission, June 16, 2026'), 1),
- "So the disc was going away.": ('list', (['×  Physical discs · 2028', '×  PS3 & Vita stores · 2027', '×  A law to keep games playable'],), 3),
- "It said the following.": ('shot', ('gfx/shot_psblog.png', .33, .80, 1.0, 1.55), 2),
- "It took down re3": ('shot', ('gfx/shot_re3.png', .5, .2, 1.0, 1.5), 1),
- "Super Smash Bros. Melee reached 100%": ('progress', ('Super Smash Bros. Melee', 'decompiled · decomp.dev'), 1),
- "Six years of work.": ('big', ('2020 → 2026', 'six years of work', GOLD), 1),
- "Used with AI (Claude).": ('big', ('"Used with AI (Claude)."', '', WHITE, 70), 1),
- "In a matching decompilation": ('terminal', (), 3),
- "Pick the easiest function left": ('terminal', (['> pick easiest unmatched function', '> try to match it', '> 10 failures? move on', '> repeat'],), 1),
- "He made more progress in three weeks": ('big', ('3 weeks > 3 months', 'progress with an AI loop vs. without'), 1),
+ "The other 87%?": ('big', ('87%', 'out of print', RED), 2),
+ "one petition passed 200,000": ('counter', (0, 200000, '{:,.0f}', 'signatures on one Change.org petition'), 1),
+ "His answer:": ('quote', ('As the director of a historical video game preservation institution… this is accurate.', 'Frank Cifaldi, Video Game History Foundation'), 2),
+ "Over 1.2 million Europeans": ('counter', (0, 1294188, '{:,.0f}', "verified signatures · Stop Killing Games"), 1),
+ "The European Commission said": ('quote', ('…would not be proportionate at this stage.', 'European Commission, June 16, 2026'), 1),
  "In 2024, about 11%": ('bars', ([('2024', 10.9)], '{:.1f}%', 'New Steam releases disclosing generative AI'), 1),
- "In 2025, about 20%": ('bars', ([('2024', 10.9), ('2025', 19.9)], '{:.1f}%', 'New Steam releases disclosing generative AI'), 1),
- "By July 2026, 30.8%": ('bars', ([('2024', 10.9), ('2025', 19.9), ('2026', 30.8)], '{:.1f}%', 'New Steam releases disclosing generative AI'), 1),
- "In the week before June": ('bars', ([('2024', 10.9), ('2025', 19.9), ('2026', 30.8), ('Next Fest', 40)], '{:.0f}%', 'New Steam releases disclosing generative AI'), 1),
- "In the first quarter of 2026": ('bars', ([('Releases', 28), ('Sales', 17)], '{:.0f}%', 'AI-flagged games, Q1 2026', 'all'), 1),
- "A modder known as chasmlol": ('shot', ('gfx/shot_skycraft.png', .3, .3, 1.0, 1.4), 1),
- "The two talk to each other": ('big', ('Skyrim ⇄ Minecraft', 'connected through shared memory', WHITE, 110), 1),
- "It was a format.": ('split', (['fallout', 'outerwilds', 'gta3'],), 1),
- "had cost 315 million": ('counter', (0, 315, '${:.0f}M', "Marvel's Spider-Man 2 budget (Insomniac leak, 2023)", GOLD), 1),
- "Spider-Man 3 was planned": ('big', ('$385M', 'Spider-Man 3, planned budget', RED), 1),
- "Sandfall's CEO said": ('bars', ([("Spider-Man 2", 315), ('Clair Obscur', 10)], '${:.0f}M', 'Development budget', 'all'), 1),
+ "By July 2026, it was 30.8%": ('bars', ([('2024', 10.9), ('July 2026', 30.8)], '{:.1f}%', 'New Steam releases disclosing generative AI'), 1),
+ "No discs.": ('list', (['×  No more discs · 2028', '×  No law to keep games playable', '×  Storefronts drowning in slop'],), 3),
+ "a leak from Insomniac": ('counter', (0, 315, '${:.0f}M', "Marvel's Spider-Man 2 budget (Insomniac leak, 2023)", GOLD), 1),
+ "Made for under 10 million": ('bars', ([("Spider-Man 2", 315), ('Clair Obscur', 10)], '${:.0f}M', 'Development budget', 'all'), 1),
  "They only have like 33": ('quote', ('They only have like 33 team members and a dog.', 'Hideo Kojima'), 1),
- "Silksong sold over 7 million": ('counter', (0, 7, '{:.0f} million', 'copies in three months', GOLD), 1),
- "together made over half a billion": ('big', ('$500M+', 'five new 2025 hits, combined', GOLD), 1),
- "Around 20,000 games launched": ('big', ('20,000 → 300', 'Steam games released in 2025 → those that made $1M+'), 1),
+ "They rebuilt the entire source code": ('shot', ('gfx/shot_sm64code.png', .55, .55, 1.0, 1.6), 4),
+ "Publishers didn't love this.": ('shot', ('gfx/shot_re3.png', .5, .2, 1.0, 1.5), 2),
+ "Super Smash Bros. Melee reached 100%": ('progress', ('Super Smash Bros. Melee', 'decompiled · July 2020 → September 2026'), 1),
+ "Used with AI (Claude).": ('big', ('"Used with AI (Claude)."', '', WHITE, 70), 1),
+ "In decompilation, the compiler": ('terminal', (), 3),
+ "Pick the easiest function": ('terminal', (['> pick easiest unmatched function', '> try to match it', '> 10 failures? move on', '> repeat'],), 1),
+ "He made more progress": ('big', ('3 weeks > 3 months', 'progress with an AI loop vs. without'), 1),
+ "That's static recompilation.": ('terminal', (['MIPS (N64)              C (PC)', '', 'lui   a0, 0x8034   ->  r4 = 0x80340000;', 'addiu a0, a0, 0x10 ->  r4 = r4 + 0x10;', 'lw    t6, 0(a0)    ->  r14 = MEM_W(r4, 0);', 'jal   0x80248AF0   ->  func_80248AF0(ctx);', '', '> every function translated', '> compiling native PC build ... OK'],), 2),
+ "A modder known as chasmlol": ('shot', ('gfx/shot_skycraft.png', .3, .3, 1.0, 1.4), 1),
+ "Both run at the same time.": ('big', ('Skyrim + Minecraft', 'both running at the same time', WHITE, 110), 1),
 }
 GF = {'big': g_big, 'counter': g_counter, 'quote': g_quote, 'bars': g_bars, 'progress': g_progress,
       'terminal': g_terminal, 'list': g_list, 'title': g_title, 'credits': g_credits}
@@ -173,15 +164,15 @@ for n, sh in enumerate(shots):
     merged.append(sh)
 final = []
 for sh in merged:
-    d = sh['e'] - sh['s']; k = 1 if 'g' in sh else max(1, math.ceil(d / 6.5))
-    for j in range(k): final.append(dict(sh, s=sh['s'] + d * j / k, e=sh['s'] + d * (j + 1) / k, part=j))
+    d = sh['e'] - sh['s']; nk = 1 if 'g' in sh else max(1, math.ceil(d / 6.5))
+    for j in range(nk): final.append(dict(sh, s=sh['s'] + d * j / nk, e=sh['s'] + d * (j + 1) / nk, part=j))
 cursor, rot = {}, {}
 for sh in final:
     a, ks = next(((a, ks) for a, ks in reversed(anch) if a <= sh['i']), anch[0])
-    ks = [k for k in ks if k in clips] or ['ps5', 'pscm']; r = rot.get(a, 0); rot[a] = r + 1
-    k = ks[r % len(ks)]; d = sh['e'] - sh['s']; c = cursor.get(k, max(2.0, clips[k] * .12))
-    if c + d > clips[k] - 1: c = 2.0 + (c % 7)
-    sh['clip'], sh['off'] = k, c; cursor[k] = c + d + 1.5
+    ks = [c for c in ks if c in clips] or ['ps5cine']; r = rot.get(a, 0); rot[a] = r + 1
+    ck = ks[r % len(ks)]; d = sh['e'] - sh['s']; c = cursor.get(ck, 0.3)
+    if c + d > clips[ck] - .2: c = 0.3
+    sh['clip'], sh['off'] = ck, c; cursor[ck] = c + d + .5
     if 'g' in sh and sh['g'][0] in ('title', 'credits') and V == 1: pass
     elif V == 1: sh.pop('g', None)
 
@@ -191,7 +182,7 @@ ENC = ['-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv4
 def render(n):
     sh = final[n]; out = f'seg/v{V}/{n:04d}.mp4'
     nf = round(sh['e'] * FPS) - round(sh['s'] * FPS); dur = nf / FPS
-    src = ['-ss', f"{sh['off']:.2f}", '-t', f'{dur + .5:.2f}', '-i', f"clips/{sh['clip']}.mp4"]
+    src = ['-stream_loop', '-1', '-ss', f"{sh['off']:.2f}", '-i', f"clips/{sh['clip']}.mp4"]
     g = sh.get('g')
     if not g:
         cmd = ['ffmpeg', '-v', 'error', '-y'] + src + ['-vf', f'scale={W}:{H},setsar=1', '-frames:v', str(nf)] + ENC + [out]
@@ -201,11 +192,6 @@ def render(n):
         png, cx, cy, z0, z1 = args
         vf = (f"scale=-2:{H * 3},zoompan=z='{z0}+({z1}-{z0})*(1-pow(1-on/{nf},3))':x='iw*{cx}-iw/zoom/2':y='ih*{cy}-ih/zoom/2':d={nf}:s={W}x{H}:fps={FPS}")
         return subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', png, '-vf', vf, '-frames:v', str(nf)] + ENC + [out], check=True)
-    if kind == 'split':
-        ins = []
-        for k in args[0]: ins += ['-ss', '5', '-t', f'{dur + .5:.2f}', '-i', f'clips/{k}.mp4']
-        fc = ';'.join(f'[{j}:v]scale=-2:{H},crop={W // 3}:{H}[c{j}]' for j in range(3)) + f';[c0][c1][c2]hstack=3,pad={W}:{H}:(ow-iw)/2:0'
-        return subprocess.run(['ffmpeg', '-v', 'error', '-y'] + ins + ['-filter_complex', fc, '-frames:v', str(nf)] + ENC + [out], check=True)
     bg = 'boxblur=14:2,eq=brightness=-0.32' if kind not in ('title', 'credits') else 'eq=brightness=-0.25'
     cmd = ['ffmpeg', '-v', 'error', '-y'] + src + ['-f', 'rawvideo', '-pix_fmt', 'rgba', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
            '-filter_complex', f'[0:v]scale={W}:{H},setsar=1,{bg}[b];[b][1:v]overlay', '-frames:v', str(nf)] + ENC + [out]
@@ -227,8 +213,8 @@ if not os.path.exists('mix.wav'):
         if 'text' in it: a = dec(f'tts/{i:03d}.mp3'); s = int(it['start'] * SR); nar[s:s + len(a)] += a[:N - s]
     nar = pyln.normalize.loudness(nar, meter.integrated_loudness(nar), -16)
     mus = np.zeros_like(nar); ms = sorted((IT[find(s)]['start'], t) for s, t in MUSIC)
-    for k, (st, tr) in enumerate(ms):
-        en = ms[k + 1][0] if k + 1 < len(ms) else TOTAL
+    for n, (st, tr) in enumerate(ms):
+        en = ms[n + 1][0] if n + 1 < len(ms) else TOTAL
         a = dec(f'music/{tr}.mp3'); a = pyln.normalize.loudness(a, meter.integrated_loudness(a), -16)
         s0 = max(0, int((st - .75) * SR)); L = int((en + .75) * SR) - s0
         a = np.tile(a, (L // len(a) + 1, 1))[:L].copy(); fi, fo = int(1.5 * SR), int(2.0 * SR)

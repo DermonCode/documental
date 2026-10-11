@@ -1,5 +1,5 @@
 # Who Gets to Keep Video Games
-*Guion de documental · ~10 min · narración en inglés*
+*Guion de documental · ~8 min · narración en inglés*
 
 ## Notas de ritmo (medidas, no supuestas)
 Medido sobre los subtítulos con tiempo por palabra de dos videos de Summoning Salt: *How Speedrunners Broke Spyro* (74 min) y *The Story of Mario Maker's Impossible Levels* (40 min). Excluí los sponsors y los clips de otras voces. Detalle en `investigacion.md` §8.
@@ -21,215 +21,199 @@ Medido sobre los subtítulos con tiempo por palabra de dos videos de Summoning S
 - **Clímax:** la frase que lo anuncia ("…Sanx did this.") y después **20+ s sin voz**.
 - **Cierre:** se amplía a la comunidad, termina con una pregunta abierta y "Time will tell.", y después vienen "This has been the history of…" y "Thanks for watching.".
 
-**Convenciones de este guion:** una oración por línea. `[ ]` = imagen o sonido. `⏸ Ns` = corte sin voz de N segundos. Las marcas de tiempo son estimadas a 160 palabras/min con los cortes incluidos.
+**Convenciones de este guion:** una oración por línea. `[ ]` = imagen o sonido. `⏸ Ns` = corte sin voz de N segundos.
 
-**Este guion medido igual:** 1467 palabras, **~10.1 min a 160 palabras/min** (entre 9.8 y 10.2 min dentro de su rango de 158–166). Mediana de 9 palabras por oración y 27% de oraciones de ≤5 palabras. Es un poco más cortante que él, a propósito, porque en 10 minutos no hay lugar para su desarrollo largo.
+**Orden (v3):** primero lo malo (corto), después AAA contra indies, decompilación, recompilación estática, passthrough mods y conclusión. Más de la mitad del tiempo va a lo bueno. Misma voz y misma velocidad que v2; se recortó texto, no se aceleró.
 
 ---
 
 ## 0:00 — COLD OPEN
-`[Negro. Un disco gira y se detiene. Música tenue.]`
+`[Discos y consola, b-roll moderno en 4K]`
 
 For most of this medium's history, buying a video game meant holding something.
 A cartridge. A disc. A box on a shelf that was still yours twenty years later.
-But today, I want to take you back to July 1st, 2026.
-That morning, a post went up on the PlayStation Blog, signed by Sid Shuman.
-It said the following.
-`[Captura del post, texto resaltado]`
-"Physical game disc production for all new games releasing on PlayStation consoles will be discontinued starting January 2028."
-Sony's reasoning was simple.
-Physical software had made up only about 3% of its sales in the previous year.
-But it landed in an industry that had already lost most of its past.
-Three years earlier, the Video Game History Foundation studied over 4,000 classic games released in the United States before 2010.
-How many could you still get through official means?
+That's ending.
+`[Captura del post del PlayStation Blog]`
+On July 1st, 2026, Sony announced that new PlayStation games would stop shipping on disc in January 2028.
+And honestly?
+That's not even the scary part.
+Three years earlier, the Video Game History Foundation studied over 4,000 classic games released in the US before 2010.
+How many could you still buy legally?
 `⏸ 1,5s`
 Thirteen percent.
-The other 87% were gone.
-So people started asking a question the industry didn't want to answer.
-If we can't hold our games anymore… who gets to keep them?
-This is the story of the people trying to answer that.
+The other 87%?
+Gone.
+So if the industry isn't keeping its games… who is?
+This is the story of the people who decided to do it themselves.
 
-`[TÍTULO: WHO GETS TO KEEP VIDEO GAMES — solo música]` `⏸ 15s`
+`[TÍTULO: WHO GETS TO KEEP VIDEO GAMES — solo música]` `⏸ 12s`
 
 ---
 
-## 1:24 — I. THE BACKLASH
-`[Collage de posts, petición en Change.org con el contador subiendo]`
+## 0:58 — I. THE BAD NEWS
+`[PS5, petición, Frank Cifaldi]`
 
-The reaction was immediate.
-That same month, one petition to reverse the decision passed 200,000 signatures.
-Some fans talked about boycotts, but most went straight to the core of it.
-If you can't buy the disc, do you actually own the game?
-Analyst Daniel Ahmad called the transition inevitable, and said the backlash would be forgotten in two years.
-And honestly, he might be right about the business.
-But the people who care most about game history weren't arguing about business.
-`[Foto de Frank Cifaldi / logo de la VGHF]`
-Frank Cifaldi, director of the Video Game History Foundation, replied to a post claiming that piracy was "the only extant form of media preservation that exists in games right now."
+Let's get the bad news out of the way.
+Fans were furious about the discs, and one petition passed 200,000 signatures that same month.
+Frank Cifaldi, who runs the Video Game History Foundation, was asked if piracy is the only real way games get preserved right now.
 His answer:
-"As the director of a historical video game preservation institution, and someone who has dedicated his entire adult life to this cause, this is accurate."
-`⏸ 2s`
-Think about that.
-He added, "We have attempted to work with the industry's trade organization to find a legal path forward, but they refuse to offer a meaningful alternative."
-Players had tried the legal route too.
-`[Mapa de la UE llenándose de firmas]`
-The Stop Killing Games movement collected 1,294,188 verified signatures across the European Union, asking for games to stay playable after publishers stop supporting them.
-On June 16th, 2026, the European Commission gave its answer.
-A legal obligation to keep games playable "would not be proportionate at this stage."
-Instead, it promised talks about a voluntary code of conduct.
-So the disc was going away.
-The old PS3 and Vita stores were closing.
-And the law wasn't coming.
-But while the industry was deciding what we were allowed to keep, a small group of people had been working on a different answer for years.
+"This is accurate."
+`[Stop Killing Games]`
+Players tried the legal route too.
+Over 1.2 million Europeans signed Stop Killing Games, asking for games to stay playable after support ends.
+The European Commission said a law would "not be proportionate at this stage."
+`[Página de Steam bajando sin fin]`
+And AI was flooding Steam with slop.
+In 2024, about 11% of new releases disclosed generative AI.
+By July 2026, it was 30.8%.
+No discs.
+No law.
+Storefronts drowning.
+Sounds hopeless, right?
+`⏸ 1s`
+It isn't.
 
-`⏸ 8s`
-
----
-
-## 3:18 — II. REBUILDING THE CODE
-`[Mario 64 original, después el port de PC en ultrawide]`
-
-In 2019, fans finished reconstructing the source code of Super Mario 64.
-Not emulating it.
-Rebuilding it.
-That opened the door to something Nintendo never made: a native PC version.
-Nintendo's lawyers responded by going after the sites hosting it.
-`[Repositorio de GitHub tachado: re3]`
-Two years later, Take-Two went further.
-It took down re3, a reverse engineered version of GTA III and Vice City, along with around 200 forks, and then sued 14 of the programmers behind it.
-The message was clear.
-This was not a safe hobby.
-But it didn't stop.
-On May 10th, 2024, Zelda 64: Recompiled came out.
-Majora's Mask, running natively on PC, with no emulator.
-A tool called N64: Recompiled translated the original program directly into code a PC could run.
-In March 2025, the same idea reached the Xbox 360.
-Unleashed Recompiled turned Sonic Unleashed into a native PC port, built with tools directly inspired by N64: Recompiled.
-And none of these projects include the game itself, so you have to bring your own copy.
-They're making sure it keeps running after the hardware it was built for is gone.
-`[Barra de progreso de decomp.dev llegando al 100%]`
-Then, on September 8th, 2026, after a project that started back in July 2020, Super Smash Bros. Melee reached 100% decompiled.
-Six years of work.
-But the announcement came with an asterisk.
-`⏸ 1,5s`
-"Used with AI (Claude)."
-
-`⏸ 5s`
+`⏸ 3s`
 
 ---
 
-## 4:46 — III. THE MACHINE
-`[Terminal con funciones que se van marcando como "matching", una tras otra]`
+## 1:58 — II. GIANTS AND SMALL TEAMS
+`[Tráiler de Spider-Man 2]`
 
-A lot of fans weren't happy about that.
-In a matching decompilation, the compiler is the judge.
-If your code is wrong, it won't match, and you know immediately.
-That's exactly why AI got so good at it, so fast.
-One developer working on Snowboard Kids 2 put Claude in a loop.
-Pick the easiest function left, try to match it, give up after ten tries, move on.
-He made more progress in three weeks than in the previous three months.
-But not every part of a game has a judge.
-On the Donkey Kong 64 recompilation, a developer known as 2dos discovered that an AI coding agent had modified RT64, the module that renders the N64's graphics.
-Code that looks right, but isn't, can go unnoticed for years.
-`[Página de Steam bajando sin fin; los juegos con aviso de IA resaltados]`
-And the same tools were flooding storefronts.
-In 2024, about 11% of new Steam releases disclosed generative AI.
-In 2025, about 20%.
-By July 2026, 30.8%.
-In the week before June's Steam Next Fest, it was 40%.
-That's the slop, and it's real.
-But look closer.
-In the first quarter of 2026, AI-flagged games were 28% of new releases… and only about 17% of estimated sales.
-Players were filtering it out.
-The problem was never the tool.
-It was what people did with it.
-And at the end of September 2026, someone did something nobody saw coming.
-
-`⏸ 6s`
-
----
-
-## 6:17 — IV. MINECRAFT IN SKYRIM
-`[Gameplay de SkyCraft: un bloque de pasto apareciendo en Whiterun]`
-
-A modder known as chasmlol released a project called SkyCraft.
-In SkyCraft, you play Skyrim… as a Minecraft player.
-Minecraft's physics.
-Minecraft's inventory.
-You place and break blocks in Skyrim's world, and you fight its NPCs with Minecraft weapons.
-And here's the crazy part.
-Neither game was rewritten.
-Both run at the same time: Skyrim draws everything on screen, while Minecraft runs hidden in the background, handling the player, the blocks, and the combat.
-The two talk to each other through shared memory.
-People started calling it a passthrough mod.
-And soon, it wasn't one mod anymore.
-It was a format.
-`[Pantalla dividida: FalloutCraft · OWCraft · GTA San AnSkateas]`
-Fallout 4 with Minecraft.
-Outer Wilds with Minecraft.
-GTA San Andreas with Skate 3.
-According to the guides spreading the format, an AI agent does most of the building.
-You point it at SkyCraft's code, describe your two games, play the result, paste the logs, and repeat.
-Not long ago, an idea like this needed years of reverse engineering experience.
-Now it needs an idea… and the patience to test it.
-
-`⏸ 5s`
-
----
-
-## 7:26 — V. THE $315 MILLION QUESTION
-`[Diapositiva filtrada de Insomniac, la cifra de $315M en zoom]`
-
-In December 2023, a ransomware leak from Insomniac Games exposed internal numbers.
-Marvel's Spider-Man 2 had cost 315 million dollars.
-Spider-Man 3 was planned at 385 million.
-When a game costs that much, every risk becomes a threat.
-So the safe parts get repeated.
-`[Montaje rápido de AAA: cámara al hombro, caminatas lentas, mapas llenos de íconos]`
+In 2023, a leak from Insomniac Games revealed that Marvel's Spider-Man 2 cost 315 million dollars.
+When a game costs that much, nobody wants to take risks.
+So you get the same game, over and over.
 Over-the-shoulder camera.
 Slow cinematic walks.
-A serious protagonist.
-An open map that turns exploration into a checklist.
-No study can measure "they all feel the same."
-But ask around, and you'll hear it everywhere.
-Meanwhile, at The Game Awards 2025, Game of the Year went to Clair Obscur: Expedition 33.
-Sandfall's CEO said it cost under 10 million dollars, with a core team of around 30 people.
+A map full of icons.
+`[Clair Obscur gana Game of the Year]`
+Then, at The Game Awards 2025, Game of the Year went to Clair Obscur: Expedition 33.
+Made for under 10 million dollars, by a core team of about 30 people.
 Hideo Kojima put it best.
 "They only have like 33 team members and a dog."
 Hollow Knight: Silksong sold over 7 million copies in three months.
-Schedule I and R.E.P.O. led a wave of new 2025 hits that together made over half a billion dollars.
-It's not a fairy tale.
-Around 20,000 games launched on Steam in 2025, and only about 300 made more than a million dollars.
-But the games people couldn't stop talking about weren't the most expensive ones.
+Schedule I and R.E.P.O. came out of nowhere and became two of the biggest hits of 2025.
+The games everyone was talking about weren't the expensive ones.
+And some of the most exciting projects right now aren't even new games.
+They're old games… rebuilt by fans.
 
 `⏸ 4s`
 
 ---
 
-## 8:42 — EPILOGUE
-`[Vuelve el disco del inicio, girando otra vez]`
+## 3:00 — III. REBUILDING THE CODE
+`[Super Mario 64 en PC con ray tracing]`
+
+In 2019, fans finished something wild.
+They rebuilt the entire source code of Super Mario 64.
+Not emulating it.
+Rewriting it, function by function, until it compiled into the exact same game.
+That's called decompilation.
+And once you have the code, you can take the game anywhere.
+Mario 64 got a native PC port… and then ray tracing.
+`[Ship of Harkinian en 4K]`
+Ocarina of Time became Ship of Harkinian, in 4K, widescreen, at 120 frames per second.
+Majora's Mask followed with 2 Ship 2 Harkinian.
+Perfect Dark.
+Star Fox 64.
+Mario Kart 64.
+All rebuilt, all running natively on PC.
+And it's not just Nintendo.
+Jak and Daxter was rebuilt through OpenGOAL, and now the whole trilogy runs on PC.
+`[Repositorio de re3]`
+Publishers didn't love this.
+Take-Two sued the programmers behind re3, a rebuilt version of GTA III and Vice City.
+But it didn't stop.
+`[Melee, barra de decomp.dev al 100%]`
+On September 8th, 2026, after six years of work, Super Smash Bros. Melee reached 100% decompiled.
+With an asterisk.
+`⏸ 1s`
+"Used with AI (Claude)."
+In decompilation, the compiler is the judge.
+If your code is wrong, it won't match, and you know immediately.
+That's exactly why AI got so good at it.
+`[Snowboard Kids 2]`
+One developer working on Snowboard Kids 2 put Claude in a loop.
+Pick the easiest function, try to match it, give up after ten tries, move on.
+He made more progress in three weeks than in the previous three months.
+
+`⏸ 4s`
+
+---
+
+## 4:40 — IV. SKIPPING THE CODE
+`[Código de máquina convirtiéndose en código de PC]`
+
+But what if you didn't have to rebuild the code at all?
+That's static recompilation.
+Instead of rewriting a game by hand, a tool reads the original machine code and translates it straight into code a PC can run.
+No emulator.
+`[Majora's Mask en ultrawide]`
+On May 10th, 2024, Zelda 64: Recompiled came out.
+Majora's Mask, running natively on PC, in ultrawide, at high frame rates.
+The tool behind it, N64: Recompiled, was open source.
+So the floodgates opened.
+Duke Nukem: Zero Hour.
+Dr. Mario 64.
+Banjo-Kazooie.
+Even Dinosaur Planet, a Rare game that was cancelled and never released, now runs natively on PC.
+`[Sonic Unleashed en 4K]`
+Then, in March 2025, the idea jumped a generation.
+Unleashed Recompiled turned the Xbox 360 version of Sonic Unleashed into a native PC port, in 4K, at 60 frames per second and beyond.
+None of these include the game itself.
+You bring your own copy.
+They just make sure it keeps running after the hardware is gone.
+
+`⏸ 4s`
+
+---
+
+## 5:52 — V. MINECRAFT IN SKYRIM
+`[SkyCraft: bloques de Minecraft en Skyrim]`
+
+And then, at the end of September 2026, things got weird.
+A modder known as chasmlol released SkyCraft.
+In SkyCraft, you play Skyrim… as a Minecraft player.
+You break and place blocks in Skyrim's world.
+You dig straight into the terrain.
+You fight its NPCs with Minecraft weapons.
+And here's the crazy part.
+Neither game was rewritten.
+Both run at the same time.
+Skyrim draws everything on screen, while Minecraft runs hidden in the background, handling the player, the blocks, and the combat.
+People called it a passthrough mod.
+And within days, it was everywhere.
+`[Un clip por cada mod]`
+Minecraft in Fallout 4.
+Minecraft in World of Warcraft.
+Skate 3 in GTA San Andreas.
+DOOM in Skyrim.
+Most of them were built with AI.
+You point an agent at SkyCraft's code, describe your two games, play the result, paste the errors, and repeat.
+Not long ago, this took years of reverse engineering experience.
+Now it takes an idea… and a lot of patience.
+
+`⏸ 5s`
+
+---
+
+## 7:00 — EPILOGUE
+`[Repaso de todo lo que se mostró]`
 
 So where does that leave us?
-The discs stop in 2028, the law isn't coming, and most of gaming's past is already out of print.
+The discs are going away, the law isn't coming, and most of gaming's past is out of print.
 But Mario 64's code is out there.
 Majora's Mask runs natively on PC.
 Melee is fully decompiled.
-Not because a publisher decided to save them.
+And somebody put Minecraft inside Skyrim.
+Not because a publisher decided to.
 Because players did.
-So maybe it's time we stop measuring games by what they cost.
-The games that defined quality are still here.
-Play them.
+So play the games that matter to you.
 Support the people preserving them.
-And push for laws that let them do it out in the open.
-And keep your eyes on the small teams.
-Yes, AI is going to bury storefronts in slop.
-But it's also putting the tools in the hands of people who never had the time, or the training, to make a game.
-People with ideas no boardroom would ever approve.
-Like putting Minecraft inside Skyrim.
+And keep an eye on the small teams.
 Most of what they make will be forgotten.
-But some of it is going to be the next game we can't stop talking about.
-And this time, hopefully, we'll get to keep it.
-Will the industry listen?
-Time will tell.
+But some of it will be the next game we can't stop talking about.
+And this time, hopefully, we get to keep it.
 `⏸ 1s`
 This has been the story of who gets to keep video games.
 Thanks for watching.
@@ -239,7 +223,8 @@ Thanks for watching.
 ---
 
 ### Fuentes de cada afirmación
-Todas las cifras, fechas y citas del guion están en `investigacion.md`, con su link. Hay tres datos que aparecen en el guion y no en el informe:
+Todas las cifras, fechas y citas del guion están en `investigacion.md`, con su link. Datos que aparecen en el guion y no en el informe:
 - La regla del agente en *Snowboard Kids 2* (función más fácil, 10 intentos y sigue): [Yahoo Tech](https://tech.yahoo.com/gaming/articles/pc-ports-old-console-games-160000404.html).
-- El nombre de 2dos en el caso RT64: [Yahoo Tech](https://tech.yahoo.com/gaming/articles/pc-ports-old-console-games-160000404.html).
 - La cita completa de Cifaldi: [Digital Trends](https://www.digitaltrends.com/gaming/sony-is-helping-bury-physical-games-and-preservation-is-being-left-to-clean-up-the-mess/).
+- Ports y recompilaciones nombrados (Ship of Harkinian, 2 Ship 2 Harkinian, Perfect Dark, Starship, SpaghettiKart, OpenGOAL, Duke Nukem: Zero Hour, Dr. Mario 64, Banjo-Kazooie y Dinosaur Planet Recompiled): ver `fuentes.txt`.
+- Passthrough mods (FalloutCraft, Minecraft en WoW, GTA San AnSkateas, SkyDoom) y la excavación de terreno en SkyCraft: ver `fuentes.txt`.
