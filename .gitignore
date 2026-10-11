@@ -3,3 +3,4 @@ __pycache__/
 *.mkv
 proyecto/seg/
 proyecto/mix.wav
+*.part
