@@ -2,7 +2,7 @@ FUENTES DEL DOCUMENTAL "WHO GETS TO KEEP VIDEO GAMES" (v3)
 (clave = nombre del archivo en proyecto/clips/, con el tramo usado; todo descargado a 1080p o más y llevado a 1920x1080)
 
 == YouTube ==
-ps5cine    2:49.0-3:41.0  https://www.youtube.com/watch?v=xm3VHjZl4DU
+ps5cine    2:52.0-3:41.0  https://www.youtube.com/watch?v=xm3VHjZl4DU
 mpbox      0:00.0-0:40.0  https://www.youtube.com/watch?v=pEqgewp9DTc
 mpdisc     4:49.0-5:30.0  https://www.youtube.com/watch?v=pEqgewp9DTc
 shelf      3:20.0-4:40.0  https://www.youtube.com/watch?v=4iSpL_-hO8Y

@@ -1,7 +1,7 @@
 # key -> (source, start s, end s). source = YouTube id, or 'steam_x' (src/steam_x.mp4 from steam.py)
 # every range was checked by eye against what the narration says at that moment
 CLIPS = {
- 'ps5cine':  ('xm3VHjZl4DU', 169, 221),   # PS5 disc edition, cinematic close-ups
+ 'ps5cine':  ('xm3VHjZl4DU', 172, 221),   # PS5 disc edition, cinematic close-ups
  'mpbox':    ('pEqgewp9DTc', 0, 40),      # 4K b-roll: boxed game in hand
  'mpdisc':   ('pEqgewp9DTc', 289, 330),   # 4K b-roll: game disc
  'shelf':    ('4iSpL_-hO8Y', 200, 280),   # 4K game room: shelves of carts and boxes
