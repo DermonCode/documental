@@ -158,8 +158,8 @@ for n, sh in enumerate(shots):
     sh['times'] = [0]
     if sh['i'] in gmap:
         sh['g'] = gmap[sh['i']]; skip = sh['g'][2] - 1
-    elif sh['i'] == title_i + 1: sh['g'] = ('title', (), 1)
-    elif n == len(shots) - 1: sh['g'] = ('credits', (), 1)
+    elif V == 2 and sh['i'] == title_i + 1: sh['g'] = ('title', (), 1)
+    elif V == 2 and n == len(shots) - 1: sh['g'] = ('credits', (), 1)
     if merged and 'g' not in sh and 'g' not in merged[-1] and sh['e'] - sh['s'] < 1.0: merged[-1]['e'] = sh['e']; continue
     merged.append(sh)
 final = []
@@ -178,8 +178,6 @@ for sh in final:
     if c + d > clips[ck] - .2: c = 0.3
     assert d <= clips[ck] - .5, f"clip {ck} ({clips[ck]:.1f}s) shorter than shot ({d:.1f}s) at {sh['s']:.1f}s"
     sh['clip'], sh['off'] = ck, c; cursor[ck] = c + d                  # contiguous: the next shot of this clip continues seamlessly
-    if 'g' in sh and sh['g'][0] in ('title', 'credits') and V == 1: pass
-    elif V == 1: sh.pop('g', None)
 
 # ---------- render ----------
 os.makedirs(f'seg/v{V}', exist_ok=True)

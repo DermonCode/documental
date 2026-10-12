@@ -46,6 +46,7 @@ ANCHORS = [
  ("Mario Kart 64.", ['mk64']),
  ("All rebuilt, all running", ['soh', 'mk64']),
  ("And it's not just Nintendo.", ['jak']),
+ ("Publishers didn't love this.", ['re3']),
  ("But it didn't stop.", ['re3']),
  ("On September 8th, 2026", ['melee']),
  ("One developer working on Snowboard", ['sbk2']),
