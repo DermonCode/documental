@@ -1,0 +1,18 @@
+name: release-v3.2
+on: push
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cat parts/v3.part* > documental_v3_completo.mp4 && sha256sum -c sum.txt
+      - run: |
+          gh release create v3.2 documental_v3_completo.mp4 \
+            --repo "$GITHUB_REPOSITORY" \
+            --target claude/youthful-wozniak-ew8oq2 \
+            --title "Documental v3.2" \
+            --notes "Corrige 6 frases de narración que salían cortadas y clips de tráilers con textos que no correspondían. 8:20, 1920x1080, 30 fps."
+        env:
+          GH_TOKEN: ${{ github.token }}
