@@ -17,7 +17,7 @@ ANCHORS = [
  ("Players tried the legal route", ['thecrew']),
  ("And AI was flooding Steam", ['steam']),
  ("In 2024, about 11%", ['aislop1']),
- ("No discs.", ['aislop1']),
+ ("No discs.", ['aislop3']),
  ("Sounds hopeless, right?", ['aislop2']),
  ("It isn't.", ['claircine']),
  # II. giants and small teams

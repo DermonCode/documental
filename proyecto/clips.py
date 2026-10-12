@@ -7,10 +7,11 @@ CLIPS = {
  'shelf':    ('4iSpL_-hO8Y', 200, 280),   # 4K game room: shelves of carts and boxes
  'boxes':    ('4iSpL_-hO8Y', 450, 510),   # 4K game room: boxed N64 games
  'cifaldi1': ('ChqUlJdFYS8', 80, 98),     # Frank Cifaldi
- 'cifaldi2': ('ChqUlJdFYS8', 278, 295),
+ 'cifaldi2': ('ChqUlJdFYS8', 289, 293.9),     # Cifaldi talking to camera
  'thecrew':  ('sZYruMkZazQ', 76, 118),    # The Crew, the game that started Stop Killing Games
- 'aislop1':  ('9tgVqe0c8ps', 380, 460),   # AI-generated store games
- 'aislop2':  ('9tgVqe0c8ps', 640, 800),
+ 'aislop1':  ('9tgVqe0c8ps', 444, 459.5),   # AI-generated games (no commentator on screen)
+ 'aislop2':  ('9tgVqe0c8ps', 640, 655),
+ 'aislop3':  ('9tgVqe0c8ps', 388, 397.5),   # Steam publisher page full of AI games
  'spidey1':  ('steam_spideyrev', 9.5, 21),
  'spidey2':  ('steam_spideyrev', 21.5, 33.5),
  'shoulder1':('steam_acs', 36.8, 42.8),     # over-the-shoulder
