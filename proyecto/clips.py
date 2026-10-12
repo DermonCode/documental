@@ -42,7 +42,7 @@ CLIPS = {
  'banjo':    ('zA0v6lGYUEI', 431.8, 457),
  'dino':     ('zA0v6lGYUEI', 290, 313.4),
  'sonic':    ('nEW-SFOjeCM', 11, 145),
- 'skyhud':   ('PvP5KPtSKqQ', 1012, 1040), # Skyrim with the Minecraft HUD
+ 'skyhud':   ('PvP5KPtSKqQ', 1014.5, 1030), # Skyrim with the Minecraft HUD
  'skyplace': ('PvP5KPtSKqQ', 240, 285),   # placing blocks
  'skyplace2':('zRT3MyFwgu0', 236, 250),
  'skydig':   ('ZehgImMhnRY', 302, 325),   # digging into the terrain

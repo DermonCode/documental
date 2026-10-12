@@ -68,7 +68,7 @@ ANCHORS = [
  ("And here's the crazy part.", ['skyhud']),
  ("Neither game was rewritten.", ['skyplace2']),
  ("Both run at the same time.", ['skyhud']),
- ("Skyrim draws everything", ['guidehow', 'skyhud']),
+ ("Skyrim draws everything", ['guidehow', 'skyplace']),
  ("People called it a passthrough", ['skyplace']),
  ("And within days", ['fallout2', 'wow2']),
  ("Minecraft in Fallout 4.", ['fallout']),
