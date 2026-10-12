@@ -49,7 +49,7 @@ CLIPS = {
  'skydig2':  ('ZehgImMhnRY', 625, 655),
  'skyfight': ('ZehgImMhnRY', 286, 298),   # fighting NPCs with Minecraft weapons
  'skyfight2':('zRT3MyFwgu0', 394, 407),
- 'guidehow': ('MG1PxonJ158', 36, 39.9),     # "Game A draws the world / Game B: movement, blocks, combat"
+ 'guidehow': ('MG1PxonJ158', 31, 39.3),     # "Game A draws the world / Game B: movement, blocks, combat"
  'guideask': ('MG1PxonJ158', 159, 170),   # prompt: clone SkyCraft and read it
  'guidelog': ('MG1PxonJ158', 221, 256),   # test, paste logs, repeat
  'fallout':  ('6QzpzfGrk-A', 104, 118),

@@ -165,6 +165,7 @@ for n, sh in enumerate(shots):
 final = []
 for sh in merged:
     d = sh['e'] - sh['s']; nk = 1 if 'g' in sh else max(1, math.ceil(d / 6.5))
+    if 'g' not in sh: nk = max(nk, next((len(ks) for a, ks in anch if a == sh['i']), 1))   # a line naming several games shows each one
     for j in range(nk): final.append(dict(sh, s=sh['s'] + d * j / nk, e=sh['s'] + d * (j + 1) / nk, part=j))
 cursor, rot = {}, {}
 for sh in final:
