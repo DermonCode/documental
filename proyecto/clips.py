@@ -11,9 +11,9 @@ CLIPS = {
  'thecrew':  ('sZYruMkZazQ', 76, 118),    # The Crew, the game that started Stop Killing Games
  'aislop1':  ('9tgVqe0c8ps', 380, 460),   # AI-generated store games
  'aislop2':  ('9tgVqe0c8ps', 640, 800),
- 'spidey1':  ('steam_spidey', 30, 40),
- 'spidey2':  ('steam_spidey', 46.5, 56),
- 'shoulder1':('steam_acs', 42, 47.5),     # over-the-shoulder
+ 'spidey1':  ('steam_spideyrev', 9.5, 21),
+ 'spidey2':  ('steam_spideyrev', 21.5, 33.5),
+ 'shoulder1':('steam_acs', 36.8, 42.8),     # over-the-shoulder
  'shoulder2':('steam_horizon', 31, 36),
  'walk':     ('steam_acs', 62, 68.5),     # slow walk
  'unitymap': ('kt0M-FZV3RM', 96, 118),    # AC Unity map covered in icons
@@ -24,7 +24,7 @@ CLIPS = {
  'claircine':('steam_clair', 5, 16),
  'silksong': ('steam_silksong', 28, 64),
  'schedule': ('steam_schedule', 7.8, 52),
- 'repo':     ('steam_repo', 52, 70),
+ 'repo':     ('steam_repo', 57.5, 69.5),
  'sm64':     ('zA0v6lGYUEI', 318, 347),   # Mario 64 PC port
  'sm64rt':   ('zA0v6lGYUEI', 376, 416),   # Mario 64 ray tracing
  'soh':      ('AW_5Q_RyDhY', 228, 340),   # Ship of Harkinian

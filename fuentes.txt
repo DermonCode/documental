@@ -51,16 +51,16 @@ skate      0:04.0-0:31.0  https://www.youtube.com/watch?v=EaOnLVPKiPc
 doom       0:16.0-0:49.0  https://www.youtube.com/watch?v=hYSPaI5h4vQ
 
 == Trailers oficiales de Steam (1080p) ==
-spidey1    0:30.0-0:40.0  Marvel's Spider-Man 2 - Launch Trailer (app/2651280)
-spidey2    0:46.5-0:56.0  Marvel's Spider-Man 2 - Launch Trailer (app/2651280)
-shoulder1  0:42.0-0:47.5  Assassin's Creed Shadows - Gameplay Trailer (app/3159330)
+spidey1    0:09.5-0:21.0  Marvel's Spider-Man 2 - Reveal Trailer (app/2651280)
+spidey2    0:21.5-0:33.5  Marvel's Spider-Man 2 - Reveal Trailer (app/2651280)
+shoulder1  0:36.8-0:42.8  Assassin's Creed Shadows - Gameplay Trailer (app/3159330)
 shoulder2  0:31.0-0:36.0  Horizon Forbidden West - Launch Trailer (app/2420110)
 walk       1:02.0-1:08.5  Assassin's Creed Shadows - Gameplay Trailer (app/3159330)
 clair      0:44.0-1:12.0  Clair Obscur: Expedition 33 - Launch Trailer (store.steampowered.com/app/1903340)
 claircine  0:05.0-0:16.0  Clair Obscur: Expedition 33 - Launch Trailer (store.steampowered.com/app/1903340)
 silksong   0:28.0-1:04.0  Hollow Knight: Silksong - Release Trailer (app/1030300)
 schedule   0:07.8-0:52.0  Schedule I - Gameplay Trailer (app/3164500)
-repo       0:52.0-1:10.0  R.E.P.O. - Cosmetic Update Trailer (app/3241660)
+repo       0:57.5-1:09.5  R.E.P.O. - Cosmetic Update Trailer (app/3241660)
 
 == Capturas y grabación de pantalla (Playwright) ==
 shot_psblog    https://blog.playstation.com/2026/07/01/physical-disc-production-ending-in-january-2028-for-new-games-releasing-on-playstation-consoles/
