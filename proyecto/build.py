@@ -104,7 +104,7 @@ def g_title(t, dur):
     return im
 
 CREDITS = ['Music by Kevin MacLeod (incompetech.com)', 'Licensed under Creative Commons: By Attribution 4.0',
-           'Lightless Dawn · Interloper · Sneaky Snitch · Life of Riley', 'Crypto · Digital Lemonade · Hyperfun · Inspired',
+           'Bittersweet · Stay the Course · Half Mystery · Newer Wave', 'Rising Tide · Realizer · Voxel Revolution · Airship Serenity',
            '', 'Game footage and trailers © their respective owners', 'Narration: synthetic voice']
 def g_credits(t, dur):
     im = Image.new('RGBA', (W, H)); d = ImageDraw.Draw(im); a = int(255 * ease(t / 1.0))
@@ -170,9 +170,13 @@ cursor, rot = {}, {}
 for sh in final:
     a, ks = next(((a, ks) for a, ks in reversed(anch) if a <= sh['i']), anch[0])
     ks = [c for c in ks if c in clips] or ['ps5cine']; r = rot.get(a, 0); rot[a] = r + 1
-    ck = ks[r % len(ks)]; d = sh['e'] - sh['s']; c = cursor.get(ck, 0.3)
+    d = sh['e'] - sh['s']
+    # prefer a clip that still has enough unused footage, so a shot never jumps back inside the clip
+    order = ks[r % len(ks):] + ks[:r % len(ks)]
+    ck = next((c for c in order if cursor.get(c, 0.3) + d <= clips[c] - .2), order[0]); c = cursor.get(ck, 0.3)
     if c + d > clips[ck] - .2: c = 0.3
-    sh['clip'], sh['off'] = ck, c; cursor[ck] = c + d + .5
+    assert d <= clips[ck] - .5, f"clip {ck} ({clips[ck]:.1f}s) shorter than shot ({d:.1f}s) at {sh['s']:.1f}s"
+    sh['clip'], sh['off'] = ck, c; cursor[ck] = c + d                  # contiguous: the next shot of this clip continues seamlessly
     if 'g' in sh and sh['g'][0] in ('title', 'credits') and V == 1: pass
     elif V == 1: sh.pop('g', None)
 
@@ -212,14 +216,15 @@ if not os.path.exists('mix.wav'):
     for i, it in enumerate(IT):
         if 'text' in it: a = dec(f'tts/{i:03d}.mp3'); s = int(it['start'] * SR); nar[s:s + len(a)] += a[:N - s]
     nar = pyln.normalize.loudness(nar, meter.integrated_loudness(nar), -16)
-    mus = np.zeros_like(nar); ms = sorted((IT[find(s)]['start'], t) for s, t in MUSIC)
-    for n, (st, tr) in enumerate(ms):
+    mus = np.zeros_like(nar); ms = sorted((IT[find(a)]['start'], t, o) for a, t, o in MUSIC)
+    for n, (st, tr, off) in enumerate(ms):
         en = ms[n + 1][0] if n + 1 < len(ms) else TOTAL
-        a = dec(f'music/{tr}.mp3'); a = pyln.normalize.loudness(a, meter.integrated_loudness(a), -16)
-        s0 = max(0, int((st - .75) * SR)); L = int((en + .75) * SR) - s0
-        a = np.tile(a, (L // len(a) + 1, 1))[:L].copy(); fi, fo = int(1.5 * SR), int(2.0 * SR)
+        a = dec(f'music/{tr}.mp3')[int(off * SR):]; a = pyln.normalize.loudness(a, meter.integrated_loudness(a), -16)
+        s0 = max(0, int((st - 2.0) * SR)); L = min(int((en + 1.0) * SR), N) - s0          # 3 s crossfade around each change
+        assert len(a) >= L, f'{tr} too short'                                              # never loop a track
+        a = a[:L].copy(); fi, fo = int(2.0 * SR), int((4.0 if n + 1 == len(ms) else 3.0) * SR)
         a[:fi] *= np.linspace(0, 1, fi)[:, None]; a[-fo:] *= np.linspace(1, 0, fo)[:, None]
-        mus[s0:s0 + L] += a[:N - s0]
+        mus[s0:s0 + L] += a
     hop = SR // 100; env = np.abs(nar[:, 0]).reshape(-1, hop).max(1) > 0.01
     act = np.convolve(env.astype(float), np.ones(45), 'same') > 0          # hold ~0.45 s
     gain = np.where(act, 10 ** (-17 / 20), 10 ** (-7 / 20))

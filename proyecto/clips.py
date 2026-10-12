@@ -30,8 +30,8 @@ CLIPS = {
  'soh':      ('AW_5Q_RyDhY', 228, 340),   # Ship of Harkinian
  'mm2s':     ('zA0v6lGYUEI', 159, 192),   # Majora: recomp vs 2 Ship 2 Harkinian (labelled)
  'pd':       ('zA0v6lGYUEI', 71, 90),     # Perfect Dark
- 'sf64':     ('zA0v6lGYUEI', 49, 64),     # Starship (Star Fox 64)
- 'mk64':     ('zA0v6lGYUEI', 99, 124),    # SpaghettiKart (Mario Kart 64)
+ 'sf64':     ('zA0v6lGYUEI', 49, 61.6),     # Starship (Star Fox 64)
+ 'mk64':     ('zA0v6lGYUEI', 99, 122.2),    # SpaghettiKart (Mario Kart 64)
  'jak':      ('IS4-l8RxCfo', 121, 220),   # OpenGOAL half of the comparison
  're3':      ('ZJ9Ee9XgK3k', 9, 65),
  'melee':    ('qfEWsZIhF9s', 36, 170),
@@ -39,8 +39,8 @@ CLIPS = {
  'mmrecomp': ('xGZ5aHmUWic', 968, 1240),  # Zelda 64: Recompiled, ultrawide
  'duke':     ('zA0v6lGYUEI', 5, 22),
  'drmario':  ('zA0v6lGYUEI', 197, 211),
- 'banjo':    ('zA0v6lGYUEI', 428, 457),
- 'dino':     ('zA0v6lGYUEI', 289, 318),
+ 'banjo':    ('zA0v6lGYUEI', 431.8, 457),
+ 'dino':     ('zA0v6lGYUEI', 290, 313.4),
  'sonic':    ('nEW-SFOjeCM', 11, 145),
  'skyhud':   ('PvP5KPtSKqQ', 1012, 1040), # Skyrim with the Minecraft HUD
  'skyplace': ('PvP5KPtSKqQ', 240, 285),   # placing blocks
@@ -49,7 +49,7 @@ CLIPS = {
  'skydig2':  ('ZehgImMhnRY', 625, 655),
  'skyfight': ('ZehgImMhnRY', 286, 298),   # fighting NPCs with Minecraft weapons
  'skyfight2':('zRT3MyFwgu0', 394, 407),
- 'guidehow': ('MG1PxonJ158', 36, 48),     # "Game A draws the world / Game B: movement, blocks, combat"
+ 'guidehow': ('MG1PxonJ158', 36, 39.9),     # "Game A draws the world / Game B: movement, blocks, combat"
  'guideask': ('MG1PxonJ158', 159, 170),   # prompt: clone SkyCraft and read it
  'guidelog': ('MG1PxonJ158', 221, 256),   # test, paste logs, repeat
  'fallout':  ('6QzpzfGrk-A', 104, 118),

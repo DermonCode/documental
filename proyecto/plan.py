@@ -68,7 +68,7 @@ ANCHORS = [
  ("And here's the crazy part.", ['skyhud']),
  ("Neither game was rewritten.", ['skyplace2']),
  ("Both run at the same time.", ['skyhud']),
- ("Skyrim draws everything", ['guidehow']),
+ ("Skyrim draws everything", ['guidehow', 'skyhud']),
  ("People called it a passthrough", ['skyplace']),
  ("And within days", ['fallout2', 'wow2']),
  ("Minecraft in Fallout 4.", ['fallout']),
@@ -97,14 +97,15 @@ ANCHORS = [
  ("This has been the story", ['ps5cine']),
 ]
 
-# music: line substring where a track starts (Kevin MacLeod, incompetech.com, CC BY 4.0)
+# music: line substring where a track starts, track, seconds skipped at its start
+# (Kevin MacLeod, incompetech.com, CC BY 4.0) chosen by the catalogue's mood tags for what each section tells
 MUSIC = [
- ("For most of this medium", 'Lightless_Dawn'),        # loss, slow and somber
- ("Let's get the bad news", 'Interloper'),             # tension
- ("a leak from Insomniac", 'Sneaky_Snitch'),           # tongue-in-cheek: the same game over and over
- ("Then, at The Game Awards 2025", 'Life_of_Riley'),   # small teams winning
- ("In 2019, fans finished", 'Crypto'),                 # code, reverse engineering
- ("But what if you didn't have to rebuild", 'Digital_Lemonade'),  # ports running everywhere
- ("And then, at the end of September", 'Hyperfun'),    # Minecraft in Skyrim, chaos
- ("So where does that leave us?", 'Inspired'),         # closing
+ ("For most of this medium", 'Bittersweet', 0),              # somber, calm: physical games disappearing
+ ("Let's get the bad news", 'Stay_the_Course', 0),           # dark, suspenseful: preservation, petitions, AI slop
+ ("a leak from Insomniac", 'Half_Mystery', 0),               # mysterious, low groove: big budgets, same games
+ ("Then, at The Game Awards 2025", 'Newer_Wave', 2),         # bright, uplifting: small teams win
+ ("In 2019, fans finished", 'Rising_Tide', 0),               # mysterious, driving: rebuilding code
+ ("But what if you didn't have to rebuild", 'Realizer', 0),  # bright, driving: ports everywhere
+ ("And then, at the end of September", 'Voxel_Revolution', 0),  # bouncy, playful: Minecraft in Skyrim
+ ("So where does that leave us?", 'Airship_Serenity', 0),    # calm, uplifting, slow 8-bit: closing
 ]

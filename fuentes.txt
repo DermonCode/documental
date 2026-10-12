@@ -21,8 +21,8 @@ sm64rt     6:16.0-6:56.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
 soh        3:48.0-5:40.0  https://www.youtube.com/watch?v=AW_5Q_RyDhY
 mm2s       2:39.0-3:12.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
 pd         1:11.0-1:30.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
-sf64       0:49.0-1:04.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
-mk64       1:39.0-2:04.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+sf64       0:49.0-1:01.6  https://www.youtube.com/watch?v=zA0v6lGYUEI
+mk64       1:39.0-2:02.2  https://www.youtube.com/watch?v=zA0v6lGYUEI
 jak        2:01.0-3:40.0  https://www.youtube.com/watch?v=IS4-l8RxCfo
 re3        0:09.0-1:05.0  https://www.youtube.com/watch?v=ZJ9Ee9XgK3k
 melee      0:36.0-2:50.0  https://www.youtube.com/watch?v=qfEWsZIhF9s
@@ -30,8 +30,8 @@ sbk2       4:42.0-6:16.0  https://www.youtube.com/watch?v=ryzRqtZgjxA
 mmrecomp   16:08.0-20:40.0  https://www.youtube.com/watch?v=xGZ5aHmUWic
 duke       0:05.0-0:22.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
 drmario    3:17.0-3:31.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
-banjo      7:08.0-7:37.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
-dino       4:49.0-5:18.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+banjo      7:11.8-7:37.0  https://www.youtube.com/watch?v=zA0v6lGYUEI
+dino       4:50.0-5:13.4  https://www.youtube.com/watch?v=zA0v6lGYUEI
 sonic      0:11.0-2:25.0  https://www.youtube.com/watch?v=nEW-SFOjeCM
 skyhud     16:52.0-17:20.0  https://www.youtube.com/watch?v=PvP5KPtSKqQ
 skyplace   4:00.0-4:45.0  https://www.youtube.com/watch?v=PvP5KPtSKqQ
@@ -40,7 +40,7 @@ skydig     5:02.0-5:25.0  https://www.youtube.com/watch?v=ZehgImMhnRY
 skydig2    10:25.0-10:55.0  https://www.youtube.com/watch?v=ZehgImMhnRY
 skyfight   4:46.0-4:58.0  https://www.youtube.com/watch?v=ZehgImMhnRY
 skyfight2  6:34.0-6:47.0  https://www.youtube.com/watch?v=zRT3MyFwgu0
-guidehow   0:36.0-0:48.0  https://www.youtube.com/watch?v=MG1PxonJ158
+guidehow   0:36.0-0:39.9  https://www.youtube.com/watch?v=MG1PxonJ158
 guideask   2:39.0-2:50.0  https://www.youtube.com/watch?v=MG1PxonJ158
 guidelog   3:41.0-4:16.0  https://www.youtube.com/watch?v=MG1PxonJ158
 fallout    1:44.0-1:58.0  https://www.youtube.com/watch?v=6QzpzfGrk-A
@@ -76,11 +76,11 @@ FalloutCraft: https://www.youtube.com/watch?v=6QzpzfGrk-A · Minecraft en WoW: h
 GTA San AnSkateas: https://github.com/ryglizzy/GTA-San-AnSkateas · SkyDoom: https://www.youtube.com/watch?v=hYSPaI5h4vQ
 
 == Música (Kevin MacLeod, incompetech.com, CC BY 4.0) ==
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Lightless%20Dawn.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Interloper.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sneaky%20Snitch.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Life%20of%20Riley.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Crypto.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Digital%20Lemonade.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hyperfun.mp3
-https://incompetech.com/music/royalty-free/mp3-royaltyfree/Inspired.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Bittersweet.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Stay%20the%20Course.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Half%20Mystery.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Newer%20Wave.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Rising%20Tide.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Realizer.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Voxel%20Revolution.mp3
+https://incompetech.com/music/royalty-free/mp3-royaltyfree/Airship%20Serenity.mp3
