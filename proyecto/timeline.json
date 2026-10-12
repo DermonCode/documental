@@ -30,844 +30,844 @@
 "text": "On July 1st, 2026, Sony announced that new PlayStation games would stop shipping on disc in January 2028.",
 "i": 5,
 "start": 12.432000000000002,
-"dur": 0.36
+"dur": 7.944
 },
 {
 "text": "And honestly?",
 "i": 6,
-"start": 13.192000000000002,
+"start": 20.776,
 "dur": 1.872
 },
 {
 "text": "That's not even the scary part.",
 "i": 7,
-"start": 15.464000000000002,
+"start": 23.048,
 "dur": 1.872
 },
 {
 "text": "Three years earlier, the Video Game History Foundation studied over 4,000 classic games released in the US before 2010.",
 "i": 8,
-"start": 17.736,
+"start": 25.319999999999997,
 "dur": 7.944
 },
 {
 "text": "How many could you still buy legally?",
 "i": 9,
-"start": 26.08,
+"start": 33.663999999999994,
 "dur": 1.848
 },
 {
 "pause": 1.5,
-"start": 27.927999999999997
+"start": 35.51199999999999
 },
 {
 "text": "Thirteen percent.",
 "i": 11,
-"start": 29.427999999999997,
+"start": 37.01199999999999,
 "dur": 1.872
 },
 {
 "text": "The other 87%?",
 "i": 12,
-"start": 31.699999999999996,
+"start": 39.28399999999999,
 "dur": 1.872
 },
 {
 "text": "Gone.",
 "i": 13,
-"start": 33.971999999999994,
+"start": 41.55599999999999,
 "dur": 0.72
 },
 {
 "text": "So if the industry isn't keeping its games\u2026 who is?",
 "i": 14,
-"start": 35.09199999999999,
+"start": 42.67599999999999,
 "dur": 3.384
 },
 {
 "text": "This is the story of the people who decided to do it themselves.",
 "i": 15,
-"start": 38.87599999999999,
+"start": 46.45999999999999,
 "dur": 3.384
 },
 {
 "cue": "T\u00cdTULO: WHO GETS TO KEEP VIDEO GAMES \u2014 solo m\u00fasica",
-"start": 42.25999999999999
+"start": 49.84399999999999
 },
 {
 "pause": 12.0,
-"start": 42.25999999999999
+"start": 49.84399999999999
 },
 {
 "cue": "PS5, petici\u00f3n, Frank Cifaldi",
-"start": 54.25999999999999
+"start": 61.84399999999999
 },
 {
 "text": "Let's get the bad news out of the way.",
 "i": 19,
-"start": 54.25999999999999,
+"start": 61.84399999999999,
 "dur": 1.896
 },
 {
 "text": "Fans were furious about the discs, and one petition passed 200,000 signatures that same month.",
 "i": 20,
-"start": 56.55599999999999,
+"start": 64.13999999999999,
 "dur": 5.928
 },
 {
 "text": "Frank Cifaldi, who runs the Video Game History Foundation, was asked if piracy is the only real way games get preserved right now.",
 "i": 21,
-"start": 62.883999999999986,
+"start": 70.46799999999999,
 "dur": 7.944
 },
 {
 "text": "His answer:",
 "i": 22,
-"start": 71.228,
+"start": 78.812,
 "dur": 1.872
 },
 {
 "text": "\"This is accurate.\"",
 "i": 23,
-"start": 73.25,
+"start": 80.834,
 "dur": 1.872
 },
 {
 "cue": "Stop Killing Games",
-"start": 75.522
+"start": 83.10600000000001
 },
 {
 "text": "Players tried the legal route too.",
 "i": 25,
-"start": 75.522,
+"start": 83.10600000000001,
 "dur": 1.92
 },
 {
 "text": "Over 1.2 million Europeans signed Stop Killing Games, asking for games to stay playable after support ends.",
 "i": 26,
-"start": 77.84200000000001,
+"start": 85.42600000000002,
 "dur": 7.032
 },
 {
 "text": "The European Commission said a law would \"not be proportionate at this stage.\"",
 "i": 27,
-"start": 85.27400000000002,
+"start": 92.85800000000002,
 "dur": 4.296
 },
 {
 "cue": "P\u00e1gina de Steam bajando sin fin",
-"start": 89.97000000000003
+"start": 97.55400000000003
 },
 {
 "text": "And AI was flooding Steam with slop.",
 "i": 29,
-"start": 89.97000000000003,
+"start": 97.55400000000003,
 "dur": 2.352
 },
 {
 "text": "In 2024, about 11% of new releases disclosed generative AI.",
 "i": 30,
-"start": 92.72200000000004,
-"dur": 0.36
+"start": 100.30600000000004,
+"dur": 5.088
 },
 {
 "text": "By July 2026, it was 30.8%.",
 "i": 31,
-"start": 93.48200000000004,
+"start": 105.79400000000004,
 "dur": 3.648
 },
 {
 "text": "No discs.",
 "i": 32,
-"start": 97.53000000000004,
+"start": 109.84200000000004,
 "dur": 1.872
 },
 {
 "text": "No law.",
 "i": 33,
-"start": 99.80200000000005,
+"start": 112.11400000000005,
 "dur": 1.872
 },
 {
 "text": "Storefronts drowning.",
 "i": 34,
-"start": 102.07400000000005,
+"start": 114.38600000000005,
 "dur": 1.872
 },
 {
 "text": "Sounds hopeless, right?",
 "i": 35,
-"start": 104.34600000000006,
+"start": 116.65800000000006,
 "dur": 1.872
 },
 {
 "pause": 1.0,
-"start": 106.21800000000006
+"start": 118.53000000000006
 },
 {
 "text": "It isn't.",
 "i": 37,
-"start": 107.21800000000006,
+"start": 119.53000000000006,
 "dur": 0.864
 },
 {
 "pause": 3.0,
-"start": 108.08200000000006
+"start": 120.39400000000006
 },
 {
 "cue": "Tr\u00e1iler de Spider-Man 2",
-"start": 111.08200000000006
+"start": 123.39400000000006
 },
 {
 "text": "In 2023, a leak from Insomniac Games revealed that Marvel's Spider-Man 2 cost 315 million dollars.",
 "i": 40,
-"start": 111.08200000000006,
+"start": 123.39400000000006,
 "dur": 7.896
 },
 {
 "text": "When a game costs that much, nobody wants to take risks.",
 "i": 41,
-"start": 119.37800000000007,
+"start": 131.69000000000005,
 "dur": 3.432
 },
 {
 "text": "So you get the same game, over and over.",
 "i": 42,
-"start": 123.21000000000008,
+"start": 135.52200000000005,
 "dur": 2.52
 },
 {
 "text": "Over-the-shoulder camera.",
 "i": 43,
-"start": 126.13000000000008,
+"start": 138.44200000000006,
 "dur": 1.872
 },
 {
 "text": "Slow cinematic walks.",
 "i": 44,
-"start": 128.4020000000001,
+"start": 140.71400000000008,
 "dur": 1.872
 },
 {
 "text": "A map full of icons.",
 "i": 45,
-"start": 130.67400000000012,
+"start": 142.9860000000001,
 "dur": 1.872
 },
 {
 "cue": "Clair Obscur gana Game of the Year",
-"start": 132.94600000000014
+"start": 145.25800000000012
 },
 {
 "text": "Then, at The Game Awards 2025, Game of the Year went to Clair Obscur: Expedition 33.",
 "i": 47,
-"start": 132.94600000000014,
+"start": 145.25800000000012,
 "dur": 6.864
 },
 {
 "text": "Made for under 10 million dollars, by a core team of about 30 people.",
 "i": 48,
-"start": 140.21000000000015,
+"start": 152.52200000000013,
 "dur": 4.584
 },
 {
 "text": "Hideo Kojima put it best.",
 "i": 49,
-"start": 145.19400000000016,
+"start": 157.50600000000014,
 "dur": 2.16
 },
 {
 "text": "\"They only have like 33 team members and a dog.\"",
 "i": 50,
-"start": 147.75400000000016,
+"start": 160.06600000000014,
 "dur": 3.192
 },
 {
 "text": "Hollow Knight: Silksong sold over 7 million copies in three months.",
 "i": 51,
-"start": 151.34600000000017,
+"start": 163.65800000000016,
 "dur": 4.656
 },
 {
 "text": "Schedule I and R.E.P.O. came out of nowhere and became two of the biggest hits of 2025.",
 "i": 52,
-"start": 156.40200000000019,
+"start": 168.71400000000017,
 "dur": 5.88
 },
 {
 "text": "The games everyone was talking about weren't the expensive ones.",
 "i": 53,
-"start": 162.6820000000002,
+"start": 174.99400000000017,
 "dur": 3.312
 },
 {
 "text": "And some of the most exciting projects right now aren't even new games.",
 "i": 54,
-"start": 166.3940000000002,
-"dur": 0.36
+"start": 178.7060000000002,
+"dur": 3.912
 },
 {
 "text": "They're old games\u2026 rebuilt by fans.",
 "i": 55,
-"start": 167.15400000000022,
+"start": 183.0180000000002,
 "dur": 2.616
 },
 {
 "pause": 4.0,
-"start": 169.77000000000024
+"start": 185.6340000000002
 },
 {
 "cue": "Super Mario 64 en PC con ray tracing",
-"start": 173.77000000000024
+"start": 189.6340000000002
 },
 {
 "text": "In 2019, fans finished something wild.",
 "i": 58,
-"start": 173.77000000000024,
+"start": 189.6340000000002,
 "dur": 3.312
 },
 {
 "text": "They rebuilt the entire source code of Super Mario 64.",
 "i": 59,
-"start": 177.48200000000026,
+"start": 193.34600000000023,
 "dur": 3.816
 },
 {
 "text": "Not emulating it.",
 "i": 60,
-"start": 181.69800000000026,
+"start": 197.56200000000024,
 "dur": 1.872
 },
 {
 "text": "Rewriting it, function by function, until it compiled into the exact same game.",
 "i": 61,
-"start": 183.97000000000028,
+"start": 199.83400000000026,
 "dur": 5.184
 },
 {
 "text": "That's called decompilation.",
 "i": 62,
-"start": 189.5540000000003,
+"start": 205.41800000000026,
 "dur": 1.872
 },
 {
 "text": "And once you have the code, you can take the game anywhere.",
 "i": 63,
-"start": 191.8260000000003,
+"start": 207.69000000000028,
 "dur": 3.216
 },
 {
 "text": "Mario 64 got a native PC port\u2026 and then ray tracing.",
 "i": 64,
-"start": 195.44200000000032,
+"start": 211.3060000000003,
 "dur": 3.864
 },
 {
 "cue": "Ship of Harkinian en 4K",
-"start": 199.70600000000033
+"start": 215.5700000000003
 },
 {
 "text": "Ocarina of Time became Ship of Harkinian, in 4K, widescreen, at 120 frames per second.",
 "i": 66,
-"start": 199.70600000000033,
+"start": 215.5700000000003,
 "dur": 7.32
 },
 {
 "text": "Majora's Mask followed with 2 Ship 2 Harkinian.",
 "i": 67,
-"start": 207.42600000000033,
+"start": 223.2900000000003,
 "dur": 3.432
 },
 {
 "text": "Perfect Dark.",
 "i": 68,
-"start": 211.25800000000032,
+"start": 227.1220000000003,
 "dur": 1.872
 },
 {
 "text": "Star Fox 64.",
 "i": 69,
-"start": 213.53000000000034,
+"start": 229.39400000000032,
 "dur": 1.68
 },
 {
 "text": "Mario Kart 64.",
 "i": 70,
-"start": 215.61000000000035,
+"start": 231.47400000000033,
 "dur": 1.872
 },
 {
 "text": "All rebuilt, all running natively on PC.",
 "i": 71,
-"start": 217.88200000000037,
+"start": 233.74600000000035,
 "dur": 3.072
 },
 {
 "text": "And it's not just Nintendo.",
 "i": 72,
-"start": 221.35400000000038,
+"start": 237.21800000000036,
 "dur": 1.872
 },
 {
 "text": "Jak and Daxter was rebuilt through OpenGOAL, and now the whole trilogy runs on PC.",
 "i": 73,
-"start": 223.6260000000004,
+"start": 239.49000000000038,
 "dur": 5.472
 },
 {
 "cue": "Repositorio de re3",
-"start": 229.49800000000042
+"start": 245.3620000000004
 },
 {
 "text": "Publishers didn't love this.",
 "i": 75,
-"start": 229.49800000000042,
+"start": 245.3620000000004,
 "dur": 1.872
 },
 {
 "text": "Take-Two sued the programmers behind re3, a rebuilt version of GTA III and Vice City.",
 "i": 76,
-"start": 231.77000000000044,
+"start": 247.6340000000004,
 "dur": 6.144
 },
 {
 "text": "But it didn't stop.",
 "i": 77,
-"start": 238.31400000000045,
+"start": 254.17800000000042,
 "dur": 1.32
 },
 {
 "cue": "Melee, barra de decomp.dev al 100%",
-"start": 240.03400000000045
+"start": 255.89800000000042
 },
 {
 "text": "On September 8th, 2026, after six years of work, Super Smash Bros. Melee reached 100% decompiled.",
 "i": 79,
-"start": 240.03400000000045,
+"start": 255.89800000000042,
 "dur": 7.944
 },
 {
 "text": "With an asterisk.",
 "i": 80,
-"start": 248.37800000000044,
+"start": 264.2420000000004,
 "dur": 1.872
 },
 {
 "pause": 1.0,
-"start": 250.25000000000045
+"start": 266.11400000000043
 },
 {
 "text": "\"Used with AI (Claude).\"",
 "i": 82,
-"start": 251.25000000000045,
+"start": 267.11400000000043,
 "dur": 1.896
 },
 {
 "text": "In decompilation, the compiler is the judge.",
 "i": 83,
-"start": 253.54600000000045,
+"start": 269.4100000000004,
 "dur": 3.144
 },
 {
 "text": "If your code is wrong, it won't match, and you know immediately.",
 "i": 84,
-"start": 257.09000000000043,
+"start": 272.9540000000004,
 "dur": 3.696
 },
 {
 "text": "That's exactly why AI got so good at it.",
 "i": 85,
-"start": 261.18600000000043,
+"start": 277.0500000000004,
 "dur": 2.496
 },
 {
 "cue": "Snowboard Kids 2",
-"start": 264.0820000000004
+"start": 279.94600000000037
 },
 {
 "text": "One developer working on Snowboard Kids 2 put Claude in a loop.",
 "i": 87,
-"start": 264.0820000000004,
+"start": 279.94600000000037,
 "dur": 3.768
 },
 {
 "text": "Pick the easiest function, try to match it, give up after ten tries, move on.",
 "i": 88,
-"start": 268.25000000000034,
+"start": 284.1140000000003,
 "dur": 5.016
 },
 {
 "text": "He made more progress in three weeks than in the previous three months.",
 "i": 89,
-"start": 273.66600000000034,
-"dur": 0.36
+"start": 289.5300000000003,
+"dur": 4.008
 },
 {
 "pause": 4.0,
-"start": 274.02600000000035
+"start": 293.5380000000003
 },
 {
 "cue": "C\u00f3digo de m\u00e1quina convirti\u00e9ndose en c\u00f3digo de PC",
-"start": 278.02600000000035
+"start": 297.5380000000003
 },
 {
 "text": "But what if you didn't have to rebuild the code at all?",
 "i": 92,
-"start": 278.02600000000035,
+"start": 297.5380000000003,
 "dur": 2.544
 },
 {
 "text": "That's static recompilation.",
 "i": 93,
-"start": 280.9700000000003,
+"start": 300.48200000000026,
 "dur": 1.92
 },
 {
 "text": "Instead of rewriting a game by hand, a tool reads the original machine code and translates it straight into code a PC can run.",
 "i": 94,
-"start": 283.2900000000003,
+"start": 302.80200000000025,
 "dur": 7.824
 },
 {
 "text": "No emulator.",
 "i": 95,
-"start": 291.5140000000003,
-"dur": 0.36
+"start": 311.02600000000024,
+"dur": 1.872
 },
 {
 "cue": "Majora's Mask en ultrawide",
-"start": 292.2740000000003
+"start": 313.29800000000023
 },
 {
 "text": "On May 10th, 2024, Zelda 64: Recompiled came out.",
 "i": 97,
-"start": 292.2740000000003,
+"start": 313.29800000000023,
 "dur": 5.376
 },
 {
 "text": "Majora's Mask, running natively on PC, in ultrawide, at high frame rates.",
 "i": 98,
-"start": 298.05000000000024,
+"start": 319.0740000000002,
 "dur": 5.52
 },
 {
 "text": "The tool behind it, N64: Recompiled, was open source.",
 "i": 99,
-"start": 303.9700000000002,
+"start": 324.99400000000014,
 "dur": 4.728
 },
 {
 "text": "So the floodgates opened.",
 "i": 100,
-"start": 309.0980000000002,
+"start": 330.1220000000001,
 "dur": 1.872
 },
 {
 "text": "Duke Nukem: Zero Hour.",
 "i": 101,
-"start": 311.3700000000002,
+"start": 332.3940000000001,
 "dur": 2.016
 },
 {
 "text": "Dr. Mario 64.",
 "i": 102,
-"start": 313.7860000000002,
+"start": 334.8100000000001,
 "dur": 1.872
 },
 {
 "text": "Banjo-Kazooie.",
 "i": 103,
-"start": 316.05800000000016,
+"start": 337.0820000000001,
 "dur": 1.872
 },
 {
 "text": "Even Dinosaur Planet, a Rare game that was cancelled and never released, now runs natively on PC.",
 "i": 104,
-"start": 318.33000000000015,
+"start": 339.3540000000001,
 "dur": 6.24
 },
 {
 "cue": "Sonic Unleashed en 4K",
-"start": 324.97000000000014
+"start": 345.9940000000001
 },
 {
 "text": "Then, in March 2025, the idea jumped a generation.",
 "i": 106,
-"start": 324.97000000000014,
+"start": 345.9940000000001,
 "dur": 4.488
 },
 {
 "text": "Unleashed Recompiled turned the Xbox 360 version of Sonic Unleashed into a native PC port, in 4K, at 60 frames per second and beyond.",
 "i": 107,
-"start": 329.8580000000001,
+"start": 350.88200000000006,
 "dur": 10.632
 },
 {
 "text": "None of these include the game itself.",
 "i": 108,
-"start": 340.8900000000001,
+"start": 361.91400000000004,
 "dur": 2.136
 },
 {
 "text": "You bring your own copy.",
 "i": 109,
-"start": 343.4260000000001,
+"start": 364.45000000000005,
 "dur": 1.872
 },
 {
 "text": "They just make sure it keeps running after the hardware is gone.",
 "i": 110,
-"start": 345.6980000000001,
+"start": 366.72200000000004,
 "dur": 2.88
 },
 {
 "pause": 4.0,
-"start": 348.5780000000001
+"start": 369.60200000000003
 },
 {
 "cue": "SkyCraft: bloques de Minecraft en Skyrim",
-"start": 352.5780000000001
+"start": 373.60200000000003
 },
 {
 "text": "And then, at the end of September 2026, things got weird.",
 "i": 113,
-"start": 352.5780000000001,
+"start": 373.60200000000003,
 "dur": 4.176
 },
 {
 "text": "A modder known as chasmlol released SkyCraft.",
 "i": 114,
-"start": 357.15400000000005,
+"start": 378.178,
 "dur": 2.88
 },
 {
 "text": "In SkyCraft, you play Skyrim\u2026 as a Minecraft player.",
 "i": 115,
-"start": 360.434,
+"start": 381.45799999999997,
 "dur": 3.648
 },
 {
 "text": "You break and place blocks in Skyrim's world.",
 "i": 116,
-"start": 364.482,
+"start": 385.506,
 "dur": 2.688
 },
 {
 "text": "You dig straight into the terrain.",
 "i": 117,
-"start": 367.57,
+"start": 388.59399999999994,
 "dur": 1.872
 },
 {
 "text": "You fight its NPCs with Minecraft weapons.",
 "i": 118,
-"start": 369.842,
+"start": 390.86599999999993,
 "dur": 2.904
 },
 {
 "text": "And here's the crazy part.",
 "i": 119,
-"start": 373.14599999999996,
+"start": 394.1699999999999,
 "dur": 1.872
 },
 {
 "text": "Neither game was rewritten.",
 "i": 120,
-"start": 375.41799999999995,
+"start": 396.4419999999999,
 "dur": 1.872
 },
 {
 "text": "Both run at the same time.",
 "i": 121,
-"start": 377.68999999999994,
+"start": 398.7139999999999,
 "dur": 1.584
 },
 {
 "text": "Skyrim draws everything on screen, while Minecraft runs hidden in the background, handling the player, the blocks, and the combat.",
 "i": 122,
-"start": 379.6739999999999,
+"start": 400.69799999999987,
 "dur": 8.064
 },
 {
 "text": "People called it a passthrough mod.",
 "i": 123,
-"start": 388.1379999999999,
+"start": 409.16199999999986,
 "dur": 1.944
 },
 {
 "text": "And within days, it was everywhere.",
 "i": 124,
-"start": 390.4819999999999,
-"dur": 0.36
+"start": 411.50599999999986,
+"dur": 2.256
 },
 {
 "cue": "Un clip por cada mod",
-"start": 391.2419999999999
+"start": 414.1619999999998
 },
 {
 "text": "Minecraft in Fallout 4.",
 "i": 126,
-"start": 391.2419999999999,
+"start": 414.1619999999998,
 "dur": 1.872
 },
 {
 "text": "Minecraft in World of Warcraft.",
 "i": 127,
-"start": 393.5139999999999,
+"start": 416.4339999999998,
 "dur": 2.184
 },
 {
 "text": "Skate 3 in GTA San Andreas.",
 "i": 128,
-"start": 396.0979999999999,
+"start": 419.0179999999998,
 "dur": 2.784
 },
 {
 "text": "DOOM in Skyrim.",
 "i": 129,
-"start": 399.28199999999987,
+"start": 422.20199999999977,
 "dur": 1.872
 },
 {
 "text": "Most of them were built with AI.",
 "i": 130,
-"start": 401.55399999999986,
+"start": 424.47399999999976,
 "dur": 1.872
 },
 {
 "text": "You point an agent at SkyCraft's code, describe your two games, play the result, paste the errors, and repeat.",
 "i": 131,
-"start": 403.82599999999985,
+"start": 426.74599999999975,
 "dur": 6.888
 },
 {
 "text": "Not long ago, this took years of reverse engineering experience.",
 "i": 132,
-"start": 411.1139999999998,
+"start": 434.0339999999997,
 "dur": 4.056
 },
 {
 "text": "Now it takes an idea\u2026 and a lot of patience.",
 "i": 133,
-"start": 415.56999999999977,
+"start": 438.48999999999967,
 "dur": 2.76
 },
 {
 "pause": 5.0,
-"start": 418.32999999999976
+"start": 441.24999999999966
 },
 {
 "cue": "Repaso de todo lo que se mostr\u00f3",
-"start": 423.32999999999976
+"start": 446.24999999999966
 },
 {
 "text": "So where does that leave us?",
 "i": 136,
-"start": 423.32999999999976,
+"start": 446.24999999999966,
 "dur": 1.872
 },
 {
 "text": "The discs are going away, the law isn't coming, and most of gaming's past is out of print.",
 "i": 137,
-"start": 425.60199999999975,
+"start": 448.52199999999965,
 "dur": 5.112
 },
 {
 "text": "But Mario 64's code is out there.",
 "i": 138,
-"start": 431.11399999999975,
+"start": 454.03399999999965,
 "dur": 2.472
 },
 {
 "text": "Majora's Mask runs natively on PC.",
 "i": 139,
-"start": 433.9859999999997,
+"start": 456.9059999999996,
 "dur": 2.76
 },
 {
 "text": "Melee is fully decompiled.",
 "i": 140,
-"start": 437.1459999999997,
+"start": 460.0659999999996,
 "dur": 2.016
 },
 {
 "text": "And somebody put Minecraft inside Skyrim.",
 "i": 141,
-"start": 439.56199999999967,
+"start": 462.4819999999996,
 "dur": 2.424
 },
 {
 "text": "Not because a publisher decided to.",
 "i": 142,
-"start": 442.3859999999996,
+"start": 465.30599999999953,
 "dur": 2.016
 },
 {
 "text": "Because players did.",
 "i": 143,
-"start": 444.8019999999996,
+"start": 467.7219999999995,
 "dur": 1.872
 },
 {
 "text": "So play the games that matter to you.",
 "i": 144,
-"start": 447.0739999999996,
+"start": 469.9939999999995,
 "dur": 1.896
 },
 {
 "text": "Support the people preserving them.",
 "i": 145,
-"start": 449.3699999999996,
+"start": 472.2899999999995,
 "dur": 1.872
 },
 {
 "text": "And keep an eye on the small teams.",
 "i": 146,
-"start": 451.6419999999996,
+"start": 474.5619999999995,
 "dur": 1.944
 },
 {
 "text": "Most of what they make will be forgotten.",
 "i": 147,
-"start": 453.9859999999996,
+"start": 476.9059999999995,
 "dur": 2.088
 },
 {
 "text": "But some of it will be the next game we can't stop talking about.",
 "i": 148,
-"start": 456.4739999999996,
+"start": 479.3939999999995,
 "dur": 3.288
 },
 {
 "text": "And this time, hopefully, we get to keep it.",
 "i": 149,
-"start": 460.1619999999996,
+"start": 483.0819999999995,
 "dur": 2.712
 },
 {
 "pause": 1.0,
-"start": 462.87399999999957
+"start": 485.79399999999947
 },
 {
 "text": "This has been the story of who gets to keep video games.",
 "i": 151,
-"start": 463.87399999999957,
+"start": 486.79399999999947,
 "dur": 3.024
 },
 {
 "text": "Thanks for watching.",
 "i": 152,
-"start": 467.29799999999955,
+"start": 490.21799999999945,
 "dur": 1.872
 },
 {
 "cue": "M\u00fasica final",
-"start": 469.16999999999956
+"start": 492.08999999999946
 },
 {
 "pause": 8.0,
-"start": 469.16999999999956
+"start": 492.08999999999946
 }
 ],
-"total": 477.16999999999956
+"total": 500.08999999999946
 }
